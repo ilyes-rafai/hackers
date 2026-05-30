@@ -1,11 +1,18 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import AuroraText from "../components/Aurora";
 import ShimmerButton from "../components/Shimmer";
 import ThreeDCarousel from "../components/ThreeDCarousel";
+import Title from "../components/Title";
 import VerticalImageMarqueeGrid from "../components/VerticalMarquee";
 
 export default function Road() {
+        const t = useTranslations("Road");
+
+        // Get the localized message
+        const message = t("whatsapp_message");
+
         const WHATSAPP_NUMBER = "212727283846";
 
         return (
@@ -20,20 +27,15 @@ export default function Road() {
 
                         {/* text */}
                         <div className="">
-                                <h2 className="text-balance text-4xl sm:text-6xl mb-8 tracking-tight font-black">
-                                        <AuroraText>Ready-Made</AuroraText> Paths
-                                </h2>
+                                <Title as="h2">
+                                        <AuroraText>{t("title_highlight")}</AuroraText> {t("title_rest")}
+                                </Title>
 
-                                <p className="text-balance text-neutral-300 sm:text-xl mb-8">
-                                        Master coding, design, or cybersecurity. Follow a clear, practical path with
-                                        step-by-step tutoring.
-                                </p>
+                                <p className="text-balance text-neutral-300 sm:text-xl mb-8">{t("description")}</p>
 
                                 <ShimmerButton
-                                        text="Enroll via WhatsApp"
-                                        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                                                "Hello DHAD Hackers! I am looking to enroll in one of your ready-made learning tracks. Could you please share more information regarding the available schedules and next steps?",
-                                        )}`}
+                                        text={t("button_text")}
+                                        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`}
                                         className="w-full sm:w-auto"
                                 />
                         </div>

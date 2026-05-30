@@ -5,5 +5,38 @@
                 "title_highlight": "un suivi étape par étape",
                 "description": "Tutorat pratique : code, design et cybersécurité.",
                 "button_text": "Démarrer"
+        },
+        "Road": {
+                "title_highlight": "Parcours",
+                "title_rest": "prêts à l'emploi",
+                "description": "Maîtrisez le code, le design ou la cybersécurité. Suivez un chemin clair et pratique avec un tutorat étape par étape.",
+                "button_text": "S'inscrire via WhatsApp",
+                "whatsapp_message": "Bonjour DHAD Hackers ! Je souhaite m'inscrire à l'un de vos parcours d'apprentissage. Pourriez-vous me donner plus d'informations sur les horaires disponibles et la marche à suivre ?"
+        },
+
+        "Custom": {
+                "title_part1": "Concevez votre",
+                "title_highlight": "Pipeline de Syllabus",
+                "description": "Vos objectifs ne sont pas prédéfinis, votre apprentissage ne devrait pas l'être non plus. Sélectionnez des modules de base dans notre matrice de programme pour compiler une feuille de route éducative entièrement adaptée à vos besoins."
+        },
+        "Modality": {
+                "title_highlight": "votre apprentissage",
+                "title_rest": "Choisissez",
+                "description": "Nous proposons plusieurs formats d'apprentissage et des horaires flexibles adaptés à votre routine. Choisissez le cadre et le moment qui vous aident à vous concentrer, apprendre et réussir.",
+                "online_title": "Apprentissage en ligne",
+                "online_desc": "Rejoignez des salles de classe virtuelles interactives en direct, de n'importe où.",
+                "home_title": "À domicile",
+                "home_desc": "Bénéficiez d'un coaching privé en tête-à-tête, directement depuis votre espace.",
+                "onsite_title": "Sur site à l'EMIG",
+                "onsite_desc": "Apprenez dans un environnement technologique professionnel directement à Oujda.",
+                "location_hint": "(Situé près du lycée Abdel Moumen)"
+        },
+        "Testimonials": {
+                "title_part1": "Un petit mot",
+                "title_part2": "de notre",
+                "title_highlight": "Communauté"
+        },
+        "Faq": {
+                "title": "Questions Fréquemment Posées"
         }
 }

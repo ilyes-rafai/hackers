@@ -1,22 +1,24 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import React from "react";
 import AuroraText from "../components/Aurora";
-import SpotlightCard from "../components/SpotlightCard";
+import Title from "../components/Title";
 
 export default function Modality() {
+        const t = useTranslations("Modality");
+
         return (
                 <section className="grid text-center items-center grid-cols-1 max-w-7xl px-4 mx-auto gap-16">
                         <div className="">
-                                <h2 className="text-balance text-4xl sm:text-6xl mb-4 tracking-tight font-black text-white">
-                                        Choose <AuroraText>How You Learn</AuroraText>
-                                </h2>
-
-                                <p className="text-balance text-neutral-400 sm:text-xl">
-                                        We offer multiple learning formats and flexible hours designed to match your
-                                        routine. Pick the setting and the time that helps you focus, learn, and succeed.
-                                </p>
+                                <Title as="h2">
+                                        {t("title_rest")} <AuroraText>{t("title_highlight")}</AuroraText>
+                                </Title>
+                                <p className="text-balance text-neutral-400 sm:text-xl">{t("description")}</p>
                         </div>
 
                         <div className="flex justify-center flex-wrap items-start gap-16 text-center sm:text-left">
+                                {/* Online Learning */}
                                 <div className="w-full sm:w-78 text-center">
                                         <div className="mb-4 flex justify-center">
                                                 <svg
@@ -59,14 +61,12 @@ export default function Modality() {
                                                 </svg>
                                         </div>
                                         <div className="text-balance">
-                                                <h4 className="text-xl font-medium mb-2">Online Learning</h4>
-                                                <p className="text-neutral-400">
-                                                        Join interactive virtual classrooms live from absolute
-                                                        anywhere.{" "}
-                                                </p>
+                                                <h4 className="text-xl font-medium mb-2">{t("online_title")}</h4>
+                                                <p className="text-neutral-400">{t("online_desc")}</p>
                                         </div>
                                 </div>
 
+                                {/* At Your Home */}
                                 <div className="w-full sm:w-78 text-center">
                                         <div className="mb-4 flex justify-center">
                                                 <svg
@@ -122,14 +122,12 @@ export default function Modality() {
                                                 </svg>
                                         </div>
                                         <div className="text-balance">
-                                                <h4 className="text-xl font-medium mb-2">At Your Home</h4>
-                                                <p className="text-neutral-400">
-                                                        Get private, one-on-one remote coaching right from your
-                                                        space.{" "}
-                                                </p>
+                                                <h4 className="text-xl font-medium mb-2">{t("home_title")}</h4>
+                                                <p className="text-neutral-400">{t("home_desc")}</p>
                                         </div>
                                 </div>
 
+                                {/* On-Site */}
                                 <div className="w-full sm:w-78 text-center">
                                         <div className="mb-4 flex justify-center">
                                                 <svg
@@ -159,17 +157,15 @@ export default function Modality() {
                                                 </svg>
                                         </div>
                                         <div className="text-balance">
-                                                <h4 className="text-xl font-medium mb-2">On-Site at EMIG</h4>
-                                                <p className="text-neutral-400">
-                                                        Learn inside a professional tech environment directly in Oujda.
-                                                </p>
+                                                <h4 className="text-xl font-medium mb-2">{t("onsite_title")}</h4>
+                                                <p className="text-neutral-400">{t("onsite_desc")}</p>
                                                 <a
                                                         href="https://maps.app.goo.gl/BeLiPRd9iRCP3eCe8"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="font-semibold text-[#FF0000] underline"
                                                 >
-                                                        <small>(Located near Lycée Abdel Moumen)</small>
+                                                        <small>{t("location_hint")}</small>
                                                 </a>
                                         </div>
                                 </div>

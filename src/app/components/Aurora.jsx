@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 export default function AuroraText({
         children,
         className = "",
-        colors = ["#FF0000", "#EE2F03"],
+        colors = ["#FF0000", "orangered", "#EE2F03"],
         animationSpeed = 8,
         showBorder = false,
         direction = "horizontal",

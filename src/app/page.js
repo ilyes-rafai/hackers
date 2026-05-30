@@ -16,7 +16,7 @@ export default function Home() {
                                 <SoftAurora />
                         </div>
 
-                        <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
+                        {/* <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
                                 <div style={{ width: "100%", height: "100vh", position: "relative" }}>
                                         <DotField
                                                 dotRadius={2}
@@ -33,7 +33,7 @@ export default function Home() {
                                                 glowColor="#000000"
                                         />
                                 </div>
-                        </div>
+                        </div> */}
 
                         <Header />
 

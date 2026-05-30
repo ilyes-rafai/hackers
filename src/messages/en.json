@@ -5,5 +5,38 @@
                 "title_highlight": "Step-by-Step Guidance",
                 "description": "Practical tutoring in coding, design, and cybersecurity.",
                 "button_text": "Get Started"
+        },
+
+        "Road": {
+                "title_highlight": "Ready-Made",
+                "title_rest": "Paths",
+                "description": "Master coding, design, or cybersecurity. Follow a clear, practical path with step-by-step tutoring.",
+                "button_text": "Enroll via WhatsApp",
+                "whatsapp_message": "Hello DHAD Hackers! I am looking to enroll in one of your ready-made learning tracks. Could you please share more information regarding the available schedules and next steps?"
+        },
+        "Custom": {
+                "title_part1": "Architect Your",
+                "title_highlight": "Syllabus Pipeline",
+                "description": "Your goals aren’t pre-built, your learning shouldn't be either. Select core blocks from our curriculum matrix to compile an educational roadmap tailored entirely to you."
+        },
+        "Modality": {
+                "title_highlight": "How You Learn",
+                "title_rest": "Choose",
+                "description": "We offer multiple learning formats and flexible hours designed to match your routine. Pick the setting and the time that helps you focus, learn, and succeed.",
+                "online_title": "Online Learning",
+                "online_desc": "Join interactive virtual classrooms live from absolute anywhere.",
+                "home_title": "At Your Home",
+                "home_desc": "Get private, one-on-one remote coaching right from your space.",
+                "onsite_title": "On-Site at EMIG",
+                "onsite_desc": "Learn inside a professional tech environment directly in Oujda.",
+                "location_hint": "(Located near Lycée Abdel Moumen)"
+        },
+        "Testimonials": {
+                "title_part1": "Little",
+                "title_part2": "from Our",
+                "title_highlight": "Community"
+        },
+        "Faq": {
+                "title": "Frequently Asked Questions"
         }
 }

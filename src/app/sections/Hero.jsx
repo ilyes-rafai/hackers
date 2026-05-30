@@ -1,23 +1,22 @@
 "use client";
 
-import { useTranslations } from "next-intl"; // 1. Import hook
+import { useTranslations } from "next-intl";
 import React from "react";
 import AuroraText from "../components/Aurora";
 import OrbitingSkills from "../components/OrbitingSkills";
 import ShimmerButton from "../components/Shimmer";
+import Title from "../components/Title";
 
 function Hero() {
-        // 2. Initialize the hook with a namespace (e.g., "Hero")
         const t = useTranslations("Hero");
 
         return (
                 <section className="flex flex-wrap max-w-7xl px-4 mx-auto sm:gap-8 items-center">
                         <div className="flex flex-col justify-start items-start flex-2">
                                 <AuroraText className="text-sm tracking-wide font-bold">{t("label")}</AuroraText>
-
-                                <h1 className="text-balance text-4xl sm:text-6xl mb-8 tracking-tight font-black">
-                                        {t("title_part1")} <AuroraText> {t("title_highlight")} </AuroraText>
-                                </h1>
+                                <Title>
+                                        {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
+                                </Title>
 
                                 <p className="text-balance sm:text-xl mb-12 text-neutral-400">{t("description")}</p>
 
