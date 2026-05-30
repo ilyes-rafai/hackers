@@ -38,5 +38,30 @@
         },
         "Faq": {
                 "title": "Questions Fréquemment Posées"
+        },
+        "Footer": {
+                "rights": "Tous droits réservés.",
+                "trademark": "Politique de marque",
+                "privacy": "Politique de confidentialité"
+        },
+        "Accordion": {
+                "items": [
+                        {
+                                "question": "Quel est l'objectif principal de DHAD Hackers ?",
+                                "answer": "DHAD Hackers se concentre sur le comblement du fossé entre les connaissances théoriques et l'ingénierie d'infrastructure pratique. Nous sommes spécialisés dans la cybersécurité, l'architecture système optimisée et le développement fullstack haute performance."
+                        },
+                        {
+                                "question": "Ai-je besoin d'une expérience préalable pour rejoindre le coaching technique ?",
+                                "answer": "Notre coaching est structuré pour soutenir tous les niveaux. Que vous soyez un étudiant au début de votre parcours ou un développeur expérimenté cherchant à perfectionner vos compétences en sécurité et en DevOps, nous proposons des parcours adaptés à votre expertise actuelle."
+                        },
+                        {
+                                "question": "Comment DHAD Hackers aborde-t-il la sécurité des infrastructures ?",
+                                "answer": "Nous donnons la priorité à une architecture orientée \"sécurité d'abord\". Nous vous apprenons à minimiser les surfaces d'attaque, à implémenter des middlewares robustes et à construire des environnements isolés et sécurisés qui maintiennent des performances élevées sous une charge importante."
+                        },
+                        {
+                                "question": "Puis-je utiliser les ressources de DHAD Hackers pour mes projets académiques ?",
+                                "answer": "Absolument. DHAD Hackers est conçu pour aider les étudiants d'institutions comme SUPMTI, EHEI et EMIG à exceller dans leurs PFE et projets académiques en appliquant des standards de codage professionnels et des modèles d'infrastructure sécurisés."
+                        }
+                ]
         }
 }

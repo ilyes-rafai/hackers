@@ -1,100 +1,57 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl"; // 1. Import useLocale
 import React, { useState } from "react";
-const faqData = [
-        {
-                question: "How do I create an account?",
-                answer: 'To create an account, simply click the "Sign Up" button at the top-right corner of the page and fill in your details. It only takes a minute!',
-        },
-        {
-                question: "Can I change my subscription plan?",
-                answer: "Yes, you can upgrade or downgrade your subscription plan at any time from your account settings. Changes will be prorated.",
-        },
-        {
-                question: "What happens if I forget my password?",
-                answer: "Don't worry! You can easily reset your password by clicking the 'Forgot Password' link on the login page. We'll send a reset link to your email.",
-        },
-        {
-                question: "Where can I find the user guides?",
-                answer: 'All our user guides and documentation are available in the "Help" section of our website. You can also search for specific topics.',
-        },
-        {
-                question: "What payment methods do you accept?",
-                answer: "We accept all major credit cards, including Visa, MasterCard, and American Express. We also support payments via PayPal.",
-        },
-        {
-                question: "How can I contact customer support?",
-                answer: "Our support team is available 24/7. You can reach us via the contact form on our website, by email at support@example.com, or through live chat.",
-        },
-        {
-                question: "Is my personal data secure?",
-                answer: "Absolutely. We prioritize your privacy and security. We use state-of-the-art encryption and security protocols to protect all your data.",
-        },
-        {
-                question: "Do you have video tutorials?",
-                answer: 'Yes, we have a library of video tutorials that cover all the main features of our platform. You can find them on our YouTube channel and in the "Tutorials" section.',
-        },
-];
-const AccordionItem = ({ item, isOpen, onToggle }) => {
-        return (
-                <div className="">
-                        <button
-                                className="flex items-center justify-between w-full p-4 text-left focus:outline-none hover:bg-neutral-950 transition-colors"
-                                onClick={onToggle}
-                        >
-                                <div className="flex items-center space-x-4">
-                                        <span className="text-base font-medium text-white">{item.question}</span>
-                                </div>
 
-                                <div
-                                        className={`transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
-                                >
-                                        <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 24 24"
-                                        >
-                                                <path
-                                                        fill="black"
-                                                        className={isOpen ? "stroke-[#ff0000]" : "stroke-neutral-300"}
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        strokeWidth={2}
-                                                        d="m19 9l-7 7l-7-7"
-                                                ></path>
-                                        </svg>
-                                </div>
-                        </button>
-                        <div
-                                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96" : "max-h-0"}`}
+const AccordionItem = ({ item, isOpen, onToggle, isRtl }) => (
+        <div className="border-b border-white/5">
+                <button
+                        // text-start handles both LTR and RTL automatically
+                        className="flex items-center justify-between w-full p-4 text-start hover:bg-white/5 transition-colors cursor-pointer"
+                        onClick={onToggle}
+                >
+                        <span className="text-base font-medium text-white">{item.question}</span>
+                        <svg
+                                // The rotation flip is handled by Tailwind's RTL support if dir="rtl" is present
+                                className={`transform transition-transform duration-500 ${isOpen ? "rotate-180" : ""}`}
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
                         >
-                                <div className="p-4 pl-8 text-left">
-                                        <p className="text-neutral-400">{item.answer}</p>
-                                </div>
-                        </div>
+                                <path
+                                        fill="none"
+                                        className={isOpen ? "stroke-[#ff0000]" : "stroke-neutral-300"}
+                                        strokeWidth={2}
+                                        d="m19 9l-7 7l-7-7"
+                                />
+                        </svg>
+                </button>
+                <div className={`overflow-hidden transition-all duration-500 ${isOpen ? "max-h-96" : "max-h-0"}`}>
+                        {/* text-start ensures paragraph starts from the correct side based on locale */}
+                        <div className="p-4 pt-0 text-start text-neutral-400">{item.answer}</div>
                 </div>
-        );
-};
+        </div>
+);
+
 export default function Accordion() {
+        const t = useTranslations("Accordion");
+        const locale = useLocale();
+        const isRtl = locale === "ar";
         const [openIndex, setOpenIndex] = useState(0);
-        const handleToggle = (index) => {
-                setOpenIndex(openIndex === index ? null : index);
-        };
+
+        const faqData = t.raw("items");
+
         return (
-                <div className="flex items-center justify-center">
-                        <div className="w-full max-w-2xl mx-auto">
-                                <div className="flex flex-col gap-4">
-                                        {faqData.map((item, index) => (
-                                                <AccordionItem
-                                                        key={index}
-                                                        item={item}
-                                                        isOpen={openIndex === index}
-                                                        onToggle={() => handleToggle(index)}
-                                                />
-                                        ))}
-                                </div>
-                        </div>
+                <div className="w-full max-w-2xl mx-auto flex flex-col gap-4" dir={isRtl ? "rtl" : "ltr"}>
+                        {faqData.map((item, index) => (
+                                <AccordionItem
+                                        key={index}
+                                        item={item}
+                                        isOpen={openIndex === index}
+                                        onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+                                        isRtl={isRtl}
+                                />
+                        ))}
                 </div>
         );
 }

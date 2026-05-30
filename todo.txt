@@ -1,9 +1,7 @@
 - copywriting
-- scroll to top
 - animation on scroll
-- translate more (Builder, Footer ...)
+- translate more (Builder,...)
 - add : PYTHON section (100% online)
 - add section to refere pre-registred courses
 https://reactbits.dev/components/card-swap
-- edit the pre-made roadmaps cards in figma
 - add mascot 

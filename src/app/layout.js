@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Kufam, Poppins } from "next/font/google";
+import ScrollToTop from "./components/ScrollToTop";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -24,7 +25,10 @@ export default async function RootLayout({ children }) {
         return (
                 <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="h-full antialiased">
                         <body className={`${fontClass} overflow-x-hidden text-white bg-black h-screen`}>
-                                <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+                                <NextIntlClientProvider messages={messages}>
+                                        {children}
+                                        <ScrollToTop />
+                                </NextIntlClientProvider>
                         </body>
                 </html>
         );

@@ -5,11 +5,9 @@ import LanguageSwitcher from "../components/LangSwitcher";
 
 export default function Header() {
         return (
-                <div className="sticky top-8 w-full z-99 flex justify-between items-center mt-8 p-4 px-16 max-w-7xl mx-auto backdrop-blur-md bg-black/5 rounded-full">
-                        <div className="">
-                                <Logofull width={150} />
-                        </div>
-                        <div className="">
+                <div className="sticky top-8 w-11/12 mx-auto z-99 mt-8 p-4 px-16 backdrop-blur-md bg-white/5 rounded-full">
+                        <div className="max-w-7xl mx-auto flex justify-between items-center">
+                                <Logofull className="w-40 h-auto" />
                                 <LanguageSwitcher />
                         </div>
                         {/* <a href="tel:+212727283846" target="_blank" className="hidden md:flex items-center gap-4">

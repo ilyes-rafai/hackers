@@ -38,5 +38,30 @@
         },
         "Faq": {
                 "title": "Frequently Asked Questions"
+        },
+        "Footer": {
+                "rights": "All rights reserved.",
+                "trademark": "Trademark Policy",
+                "privacy": "Privacy policy"
+        },
+        "Accordion": {
+                "items": [
+                        {
+                                "question": "What is the primary focus of DHAD Hackers?",
+                                "answer": "DHAD Hackers focuses on bridging the gap between theoretical knowledge and practical infrastructure engineering."
+                        },
+                        {
+                                "question": "Do I need prior experience to join?",
+                                "answer": "Our coaching is structured to support all levels, from beginners to experienced developers."
+                        },
+                        {
+                                "question": "How does DHAD Hackers approach infrastructure security?",
+                                "answer": "We prioritize a 'security-first' architecture, teaching you how to build hardened, isolated environments."
+                        },
+                        {
+                                "question": "Can I use DHAD Hackers resources for my academic projects?",
+                                "answer": "Absolutely. We are designed to help students at institutions like SUPMTI, EHEI, and EMIG excel in their PFE and academic projects."
+                        }
+                ]
         }
 }

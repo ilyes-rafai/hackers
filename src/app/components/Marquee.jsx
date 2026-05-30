@@ -1,60 +1,60 @@
 "use client";
 
 import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
-import React, { useRef, useState } from "react";
+import { useLocale } from "next-intl";
+import React, { useLayoutEffect, useRef, useState } from "react";
 
-// --- Mock Testimonials Data Structures ---
 const testimonialsList1 = [
         {
                 id: 1,
-                name: "Alex Rivera",
-                role: "Senior Security Engineer",
-                quote: "This infrastructure setup drastically minimized our attack surface while scaling beautifully.",
+                name: "Yassine El Amrani",
+                role: "Étudiant at SUPMTI",
+                quote: "DHAD Hackers turned my understanding of infrastructure into a defensive fortress. The technical rigor is unmatched.",
         },
         {
                 id: 2,
-                name: "Sarah Chen",
-                role: "Lead Fullstack Dev",
-                quote: "The deep architecture integration saved our team months of custom middleware engineering.",
+                name: "Fatima Zahra Mansouri",
+                role: "Étudiant at EHEI",
+                quote: "The deep architecture integration at DHAD Hackers saved our team months of trial and error in middleware engineering.",
         },
         {
                 id: 3,
-                name: "Marc Dupont",
-                role: "CTO @ Youness School",
-                quote: "Highly efficient technical optimization paths. Incredible results on load management.",
+                name: "Hamza Benjelloun",
+                role: "Étudiant at EMIG",
+                quote: "Highly efficient optimization paths. DHAD Hackers helped us achieve production-level performance under heavy load.",
         },
         {
                 id: 4,
                 name: "Amine Radi",
-                role: "DevOps Architect",
-                quote: "Automations are pristine. Zero overhead, perfect isolated environments every time.",
+                role: "Stagiaire",
+                quote: "The automations at DHAD Hackers are pristine. Zero overhead and perfectly isolated environments every single time.",
         },
 ];
 
 const testimonialsList2 = [
         {
                 id: 5,
-                name: "Elena Rostova",
-                role: "UI/UX Specialist",
-                quote: "Fluid dark mode handling along with responsive component structures that just work natively.",
+                name: "Sofia Alaoui",
+                role: "Étudiant at SUPMTI",
+                quote: "DHAD Hackers taught me how to handle dark mode and responsive components with a level of native fluidity I hadn't seen before.",
         },
         {
                 id: 6,
-                name: "Yassine F.",
-                role: "PFE Student Alumni",
-                quote: "The technical coaching structure and continuous code review took my styling skills to elite tier.",
+                name: "Mehdi Tazi",
+                role: "LTMAO",
+                quote: "The technical coaching and continuous code review at DHAD Hackers took my styling skills to an elite tier.",
         },
         {
                 id: 7,
-                name: "David K.",
-                role: "SecOps Lead",
-                quote: "Clean code practices optimized strictly for performance and high velocity delivery tracks.",
+                name: "Salma Bennani",
+                role: "Étudiant at EMIG",
+                quote: "Clean code practices from DHAD Hackers are strictly optimized for performance and high-velocity delivery.",
         },
         {
                 id: 8,
-                name: "Sofia M.",
-                role: "Product Manager",
-                quote: "Excellent modular design execution. Very straightforward component mapping logic.",
+                name: "Omar Kadiri",
+                role: "Étudiant at Lycée Moulay Youssef",
+                quote: "Excellent modular design execution. DHAD Hackers makes complex component mapping logic feel straightforward and intuitive.",
         },
 ];
 
@@ -78,63 +78,56 @@ const TestimonialCard = ({ data }) => (
 );
 
 function TestimonialMarquee({ items, baseSpeed = 0.5 }) {
-        // FIXED: Removed the TypeScript generic definitions (<HTMLDivElement>) for JSX safety
-        const containerRef = useRef(null);
-        const scrollerRef = useRef(null);
+        const locale = useLocale();
+        const isRtl = locale === "ar";
+        // We maintain speed logic but ensure the animation container is isolated
+        const speed = isRtl ? -baseSpeed : baseSpeed;
 
+        const scrollerRef = useRef(null);
         const x = useMotionValue(0);
         const [isHovered, setIsHovered] = useState(false);
-        const [isDragging, setIsDragging] = useState(false);
 
         const tripleItems = [...items, ...items, ...items];
 
-        useAnimationFrame(() => {
-                if (!scrollerRef.current) return;
-
-                const totalWidth = scrollerRef.current.scrollWidth / 3;
-
-                if (!isHovered && !isDragging) {
-                        let currentX = x.get() - baseSpeed;
-
-                        if (currentX <= -totalWidth) {
-                                currentX += totalWidth;
-                        } else if (currentX > 0) {
-                                currentX -= totalWidth;
-                        }
-                        x.set(currentX);
-                } else if (isDragging) {
-                        let currentX = x.get();
-                        if (currentX <= -totalWidth) {
-                                x.set(currentX + totalWidth);
-                        } else if (currentX > 0) {
-                                x.set(currentX - totalWidth);
-                        }
+        useLayoutEffect(() => {
+                if (scrollerRef.current) {
+                        const singleSetWidth = scrollerRef.current.scrollWidth / 3;
+                        // Center the scroller on the middle set initially
+                        x.set(-singleSetWidth);
                 }
+        }, [x]);
+
+        useAnimationFrame(() => {
+                if (!scrollerRef.current || isHovered) return;
+
+                const singleSetWidth = scrollerRef.current.scrollWidth / 3;
+                let currentX = x.get() - speed;
+
+                // Infinite loop logic
+                if (currentX <= -singleSetWidth * 2) {
+                        currentX += singleSetWidth;
+                } else if (currentX >= 0) {
+                        currentX -= singleSetWidth;
+                }
+                x.set(currentX);
         });
 
         return (
                 <div
-                        ref={containerRef}
-                        className="max-w-full overflow-hidden py-4 cursor-grab active:cursor-grabbing touch-pan-y select-none"
+                        className="max-w-full overflow-hidden py-4 select-none"
                         style={{
                                 maskImage: "linear-gradient(to right, transparent, black 4rem, black calc(100% - 4rem), transparent)",
-                                WebkitMaskImage:
-                                        "linear-gradient(to right, transparent, black 4rem, black calc(100% - 4rem), transparent)",
                         }}
                         onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => {
-                                setIsHovered(false);
-                                setIsDragging(false);
-                        }}
+                        onMouseLeave={() => setIsHovered(false)}
                 >
                         <motion.div
                                 ref={scrollerRef}
-                                className="w-max flex"
-                                style={{ x }}
-                                drag="x"
-                                dragConstraints={{ left: -10000, right: 10000 }}
-                                onDragStart={() => setIsDragging(true)}
-                                onDragEnd={() => setIsDragging(false)}
+                                className="flex"
+                                style={{ x: x, display: "flex" }}
+                                // CRITICAL FIX: Force LTR for the motion container to stop
+                                // the RTL browser layout from glitching our animation math.
+                                dir="ltr"
                         >
                                 {tripleItems.map((data, index) => (
                                         <TestimonialCard key={`${data.id}-${index}`} data={data} />
