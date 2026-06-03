@@ -5,17 +5,25 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 
 const COL_1_IMAGES = [
-        "/img/roads/web-foundations.png",
-        "/img/roads/interactive-web.png",
-        "/img/roads/backend-and-web-mastery.png",
-        "/img/roads/digital-core-essentials.png",
+        "/img/roads/modern-web-frontend.png",
+        "/img/roads/office-suite-mastery.png",
+        "/img/roads/python-mastery.png",
+        "/img/roads/team-coding.png",
+        "/img/roads/ui-ux-design.png",
+        "/img/roads/web-backend-code.png",
+        "/img/roads/web-frontend-core.png",
+        "/img/roads/web-hacking.png",
 ];
 
 const COL_2_IMAGES = [
-        "/img/roads/backend-and-web-mastery.png",
-        "/img/roads/digital-core-essentials.png",
-        "/img/roads/web-foundations.png",
-        "/img/roads/interactive-web.png",
+        "/img/roads/modern-web-frontend.png",
+        "/img/roads/office-suite-mastery.png",
+        "/img/roads/python-mastery.png",
+        "/img/roads/team-coding.png",
+        "/img/roads/ui-ux-design.png",
+        "/img/roads/web-backend-code.png",
+        "/img/roads/web-frontend-core.png",
+        "/img/roads/web-hacking.png",
 ];
 
 const ImageCard = ({ src, index }) => (
