@@ -4,31 +4,17 @@ import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 
-const COL_1_IMAGES = [
-        "/img/roads/modern-web-frontend.png",
-        "/img/roads/office-suite-mastery.png",
-        "/img/roads/python-mastery.png",
-        "/img/roads/team-coding.png",
-        "/img/roads/ui-ux-design.png",
-        "/img/roads/web-backend-code.png",
-        "/img/roads/web-frontend-core.png",
-        "/img/roads/web-hacking.png",
-];
+const COL_1_IMAGES = ["/img/roads/modern-web-frontend.png", "/img/roads/office-suite-mastery.png"];
 
-const COL_2_IMAGES = [
-        "/img/roads/modern-web-frontend.png",
-        "/img/roads/office-suite-mastery.png",
-        "/img/roads/python-mastery.png",
-        "/img/roads/team-coding.png",
-        "/img/roads/ui-ux-design.png",
-        "/img/roads/web-backend-code.png",
-        "/img/roads/web-frontend-core.png",
-        "/img/roads/web-hacking.png",
-];
+const COL_2_IMAGES = ["/img/roads/team-coding.png", "/img/roads/ui-ux-design.png"];
+
+const COL_3_IMAGES = ["/img/roads/web-frontend-core.png", "/img/roads/web-hacking.png"];
+
+const COL_4_IMAGES = ["/img/roads/python-mastery.png", "/img/roads/web-backend-code.png"];
 
 const ImageCard = ({ src, index }) => (
         <div
-                className="shrink-0 mb-4 relative w-35 sm:w-70 overflow-hidden select-none group h-fit rounded-2xl"
+                className="shrink-0 mb-4 relative w-full overflow-hidden select-none group h-fit rounded-2xl"
                 style={{ aspectRatio: "500 / 679" }}
         >
                 <Image
@@ -79,11 +65,11 @@ function VerticalImageMarquee({ items, baseSpeed = 0.5 }) {
         return (
                 <div
                         ref={containerRef}
-                        className="h-full overflow-hidden px-2 py-2 cursor-grab active:cursor-grabbing touch-pan-x select-none"
+                        className="overflow-hidden h-[80vh] px-2 py-2 cursor-grab active:cursor-grabbing touch-pan-x select-none w-full"
                         style={{
-                                maskImage: "linear-gradient(to bottom, transparent, black 4rem, black calc(100% - 4rem), transparent)",
+                                maskImage: "linear-gradient(to bottom, transparent, black 2rem, black calc(100% - 2rem), transparent)",
                                 WebkitMaskImage:
-                                        "linear-gradient(to bottom, transparent, black 4rem, black calc(100% - 4rem), transparent)",
+                                        "linear-gradient(to bottom, transparent, black 2rem, black calc(100% - 2rem), transparent)",
                         }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => {
@@ -112,12 +98,11 @@ export default function VerticalImageMarqueeGrid() {
         return (
                 <div className="w-full h-full sm:h-150 flex items-center justify-center overflow-hidden">
                         {/* Adjusted main height wrapper to showcase roughly 2.5 cards height dynamically */}
-                        <div className="flex gap-x-4 h-full px-4 items-center justify-center">
-                                {/* Column 1: Moves Up */}
+                        <div className="flex h-full items-center justify-center w-full">
                                 <VerticalImageMarquee items={COL_1_IMAGES} baseSpeed={0.5} />
-
-                                {/* Column 2: Moves Down */}
                                 <VerticalImageMarquee items={COL_2_IMAGES} baseSpeed={-0.5} />
+                                <VerticalImageMarquee items={COL_3_IMAGES} baseSpeed={0.5} />
+                                <VerticalImageMarquee items={COL_4_IMAGES} baseSpeed={-0.5} />
                         </div>
                 </div>
         );
