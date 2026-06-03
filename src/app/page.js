@@ -12,7 +12,7 @@ import Testimonials from "./sections/Testimonials";
 export default function Home() {
         return (
                 <div>
-                        {/* <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
+                        <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
                                 <SoftAurora />
                         </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
                                                 glowColor="#000000"
                                         />
                                 </div>
-                        </div> */}
+                        </div>
 
                         <Header />
 
