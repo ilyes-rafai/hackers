@@ -5,3 +5,4 @@
 - add section to refere pre-registred courses
 https://reactbits.dev/components/card-swap
 - add mascot 
+- title & meta tags

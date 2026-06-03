@@ -67,7 +67,7 @@ export default function Footer() {
                                         />
                                 </p>
 
-                                <div className="flex items-center justify-center mt-4 gap-2">
+                                {/* <div className="flex items-center justify-center mt-4 gap-2">
                                         <a
                                                 href="#"
                                                 className="text-white hover:text-[#FF0000] transition-colors duration-300 text-sm underline"
@@ -81,7 +81,7 @@ export default function Footer() {
                                         >
                                                 {t("privacy")}
                                         </a>
-                                </div>
+                                </div> */}
                         </div>
                 </footer>
         );
