@@ -67,9 +67,9 @@ function VerticalImageMarquee({ items, baseSpeed = 0.5 }) {
                         ref={containerRef}
                         className="overflow-hidden h-[80vh] px-2 py-2 cursor-grab active:cursor-grabbing touch-pan-x select-none w-full"
                         style={{
-                                maskImage: "linear-gradient(to bottom, transparent, black 9rem, black calc(100% - 9rem), transparent)",
+                                maskImage: "linear-gradient(to bottom, transparent 2%, black, transparent calc(100% - 2% ))",
                                 WebkitMaskImage:
-                                        "linear-gradient(to bottom, transparent, black 9rem, black calc(100% - 9rem), transparent)",
+                                        "linear-gradient(to bottom, transparent 2%, black, transparent calc(100% - 2% ))",
                         }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => {
