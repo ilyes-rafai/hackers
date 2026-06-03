@@ -20,7 +20,7 @@ export default function Road() {
                         {/* text */}
                         <div className="">
                                 <Title as="h2">
-                                        <AuroraText>{t("title_highlight")}</AuroraText> {t("title_rest")}
+                                        <AuroraText>{t("title_highlight")}</AuroraText> {t("title_rest")} imad
                                 </Title>
 
                                 <p className="text-balance text-neutral-300 sm:text-xl mb-8">{t("description")}</p>
