@@ -98,12 +98,13 @@ export default function VerticalImageMarqueeGrid() {
         return (
                 <div className="w-full h-full sm:h-150 flex items-center justify-center overflow-hidden">
                         {/* Adjusted main height wrapper to showcase roughly 2.5 cards height dynamically */}
-                        <div className="flex h-full items-center justify-center w-full">
+                        <div className="h-full items-center justify-center w-full hidden sm:flex">
                                 <VerticalImageMarquee items={COL_1_IMAGES} baseSpeed={0.5} />
                                 <VerticalImageMarquee items={COL_2_IMAGES} baseSpeed={-0.5} />
                                 <VerticalImageMarquee items={COL_3_IMAGES} baseSpeed={0.5} />
                                 <VerticalImageMarquee items={COL_4_IMAGES} baseSpeed={-0.5} />
                         </div>
+                        <div className="h-full items-center justify-center w-full hidden sm:flex"></div>
                 </div>
         );
 }
