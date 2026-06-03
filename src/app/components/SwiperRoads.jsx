@@ -70,7 +70,7 @@ export default function SwiperRoads() {
                         >
                                 {images.map((image, i) => (
                                         <SwiperSlide key={i}>
-                                                <img className="rounded-lg" src={image} />
+                                                <img className="rounded-lg select-none" src={image} />
                                         </SwiperSlide>
                                 ))}
                         </Swiper>
