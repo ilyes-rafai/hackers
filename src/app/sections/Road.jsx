@@ -9,26 +9,17 @@ import Title from "../components/Title";
 export default function Road() {
         const t = useTranslations("Road");
 
-        // Get the localized message
-        const message = t("whatsapp_message");
-
-        const WHATSAPP_NUMBER = "212727283846";
-
         return (
-                <section className="grid items-center grid-cols-1 sm:grid-cols-1 max-w-7xl px-4 mx-auto gap-16">
+                <section className="grid items-center grid-cols-1 sm:grid-cols-1 gap-16">
                         {/* text */}
-                        <div className="">
+                        <div className="text-center max-w-9/12 px-4 mx-auto">
                                 <Title as="h2">
                                         <AuroraText>{t("title_highlight")}</AuroraText> {t("title_rest")}
                                 </Title>
 
                                 <p className="text-balance text-neutral-300 sm:text-xl mb-8">{t("description")}</p>
 
-                                <ShimmerButton
-                                        text={t("button_text")}
-                                        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`}
-                                        className="w-full sm:w-auto"
-                                />
+                                <ShimmerButton text={t("button_text")} />
                         </div>
 
                         {/* shape */}

@@ -267,7 +267,7 @@ export default function OrbitingSkills() {
                                 onMouseLeave={() => setIsPaused(false)}
                         >
                                 {/* Highlighted Core Center Node */}
-                                <div className="w-20 h-20 bg-linear-to-r from-[#FF0000] to-[#EE2F03] rounded-full flex items-center justify-center z-10 relative shadow-2xl">
+                                <div className="w-20 h-20 bg-linear-to-r from-[#FF0000] to-[#F61500] rounded-full flex items-center justify-center z-10 relative shadow-2xl">
                                         <div className="absolute inset-0 rounded-full bg-red-600/20 blur-xl animate-pulse" />
                                         <div
                                                 className="absolute inset-0 rounded-full bg-red-600/10 blur-2xl animate-pulse"

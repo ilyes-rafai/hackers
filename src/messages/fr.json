@@ -1,66 +1,88 @@
 {
+        "whatsapp_message": "Bonjour DHAD Hackers ! \n Je souhaite m'inscrire à l'un de vos parcours d'apprentissage clés en main. Pourriez-vous me donner plus d'informations sur les horaires disponibles et les prochaines étapes ?",
         "Hero": {
-                "label": "Pour tous niveaux et tous âges.",
-                "title_part1": "Maîtrisez la tech avec",
-                "title_highlight": "un suivi étape par étape",
-                "description": "Tutorat pratique : code, design et cybersécurité.",
-                "button_text": "Démarrer"
+                "label": "Des bases de l'informatique jusqu'à la maîtrise de la programmation et de la cybersécurité",
+                "title_part1": "À la recherche d'une formation",
+                "title_highlight": " en informatique ?",
+                "description": "Nous avons la formation qu'il vous faut, que vous souhaitiez apprendre Excel et Word, créer des sites web et des logiciels, ou même maîtriser le hacking éthique.",
+                "button_text": "Commencer à apprendre"
         },
         "Road": {
                 "title_highlight": "Parcours",
-                "title_rest": "prêts à l'emploi",
-                "description": "Maîtrisez le code, le design ou la cybersécurité. Suivez un chemin clair et pratique avec un tutorat étape par étape.",
-                "button_text": "S'inscrire via WhatsApp",
-                "whatsapp_message": "Bonjour DHAD Hackers ! Je souhaite m'inscrire à l'un de vos parcours d'apprentissage. Pourriez-vous me donner plus d'informations sur les horaires disponibles et la marche à suivre ?"
+                "title_rest": " d'apprentissage complets",
+                "description": "Maîtrisez la programmation, le design ou la cybersécurité. Suivez un parcours clair et pratique avec un accompagnement étape par étape.",
+                "button_text": "Commencer à apprendre"
         },
-
-        "Custom": {
-                "title_part1": "Concevez votre",
-                "title_highlight": "Pipeline de Syllabus",
-                "description": "Vos objectifs ne sont pas prédéfinis, votre apprentissage ne devrait pas l'être non plus. Sélectionnez des modules de base dans notre matrice de programme pour compiler une feuille de route éducative entièrement adaptée à vos besoins."
+        "Fab": {
+                "cta_text": "Prêt à commencer votre aventure ? Inscrivez-vous dès maintenant et construisez votre avenir dans le domaine de la technologie.",
+                "cta_button": "Commencer maintenant",
+                "title_1": "Apprenez les compétences très demandées",
+                "description1": "Apprenez les compétences et les outils très recherchés par les entreprises aujourd'hui, pour garantir facilement votre place sur le marché du travail.",
+                "title_2": "Choisissez l'heure et le lieu idéaux",
+                "description2": "Votre vie personnelle est importante, c'est pourquoi nous vous donnons la liberté de choisir votre temps et lieu d'apprentissage, à domicile ou dans notre centre.",
+                "title_3": "Une plateforme d'apprentissage complète",
+                "description3": "Nous vous offrons un environnement technique intégré avec de la pratique et un encadrement personnel. Rejoignez notre communauté pour avancer ensemble.",
+                "title_4": "Des années d'expérience à votre service",
+                "description4": "Nous ne faisons pas qu'enseigner la théorie ; nous partageons notre expertise et nos années de pratique sur le terrain pour que vous deveniez un pro rapidement."
         },
         "Modality": {
-                "title_highlight": "votre apprentissage",
-                "title_rest": "Choisissez",
-                "description": "Nous proposons plusieurs formats d'apprentissage et des horaires flexibles adaptés à votre routine. Choisissez le cadre et le moment qui vous aident à vous concentrer, apprendre et réussir.",
+                "title_highlight": "méthode d'apprentissage",
+                "title_rest": "Choisissez votre ",
+                "description": "Nous proposons plusieurs méthodes d'apprentissage et des horaires flexibles conçus pour s'adapter à votre routine. Choisissez le cadre et l'heure qui vous aident à vous concentrer et à réussir.",
                 "online_title": "Apprentissage en ligne",
-                "online_desc": "Rejoignez des salles de classe virtuelles interactives en direct, de n'importe où.",
+                "online_desc": "Rejoignez des classes virtuelles interactives en direct, d'où que vous soyez.",
                 "home_title": "À domicile",
-                "home_desc": "Bénéficiez d'un coaching privé en tête-à-tête, directement depuis votre espace.",
-                "onsite_title": "Sur site à l'EMIG",
-                "onsite_desc": "Apprenez dans un environnement technologique professionnel directement à Oujda.",
-                "location_hint": "(Situé près du lycée Abdel Moumen)"
+                "home_desc": "Profitez d'une formation privée et directe (1-to-1) depuis votre propre espace.",
+                "onsite_title": "Au centre EMIG",
+                "onsite_desc": "Apprenez dans un environnement technique professionnel en plein cœur de la ville d'Oujda.",
+                "location_hint": "(Situé près du lycée Abdelmoumen)"
         },
         "Testimonials": {
-                "title_part1": "Un petit mot",
-                "title_part2": "de notre",
-                "title_highlight": "Communauté"
+                "title_part1": "Quelques",
+                "title_part2": "de",
+                "title_highlight": " notre communauté"
         },
         "Faq": {
                 "title": "Questions Fréquemment Posées"
         },
         "Footer": {
                 "rights": "Tous droits réservés.",
-                "trademark": "Politique de marque",
+                "trademark": "Politique des marques",
                 "privacy": "Politique de confidentialité"
         },
         "Accordion": {
                 "items": [
                         {
-                                "question": "Quel est l'objectif principal de DHAD Hackers ?",
-                                "answer": "DHAD Hackers se concentre sur le comblement du fossé entre les connaissances théoriques et l'ingénierie d'infrastructure pratique. Nous sommes spécialisés dans la cybersécurité, l'architecture système optimisée et le développement fullstack haute performance."
+                                "question": "Quelles sont les spécialités enseignées chez DHAD Hackers ?",
+                                "answer": "Nous nous concentrons sur les domaines très demandés sur le marché comme le développement web (Laravel, React) et la cybersécurité (hacking éthique et sécurisation), en plus de la formation aux bases de l'informatique et au design."
                         },
                         {
-                                "question": "Ai-je besoin d'une expérience préalable pour rejoindre le coaching technique ?",
-                                "answer": "Notre coaching est structuré pour soutenir tous les niveaux. Que vous soyez un étudiant au début de votre parcours ou un développeur expérimenté cherchant à perfectionner vos compétences en sécurité et en DevOps, nous proposons des parcours adaptés à votre expertise actuelle."
+                                "question": "Les cours seront-ils en présentiel ou en ligne ?",
+                                "answer": "Nous vous laissons le choix ! Vous pouvez assister en présentiel dans notre centre et bénéficier d'un encadrement direct, ou étudier en ligne depuis chez vous au rythme qui vous convient."
                         },
                         {
-                                "question": "Comment DHAD Hackers aborde-t-il la sécurité des infrastructures ?",
-                                "answer": "Nous donnons la priorité à une architecture orientée \"sécurité d'abord\". Nous vous apprenons à minimiser les surfaces d'attaque, à implémenter des middlewares robustes et à construire des environnements isolés et sécurisés qui maintiennent des performances élevées sous une charge importante."
+                                "question": "La formation comprend-elle uniquement de la théorie ou aussi de la pratique ?",
+                                "answer": "Notre objectif principal est la pratique. Vous travaillerez sur de vrais projets et participerez à des défis techniques pour qu'à la fin de la formation, vous soyez prêt pour le marché du travail ou le freelancing."
                         },
                         {
-                                "question": "Puis-je utiliser les ressources de DHAD Hackers pour mes projets académiques ?",
-                                "answer": "Absolument. DHAD Hackers est conçu pour aider les étudiants d'institutions comme SUPMTI, EHEI et EMIG à exceller dans leurs PFE et projets académiques en appliquant des standards de codage professionnels et des modèles d'infrastructure sécurisés."
+                                "question": "Aidez-vous les étudiants avec leurs projets de fin d'études (PFE) ?",
+                                "answer": "Absolument ! Nous offrons un accompagnement spécial pour que les étudiants réussissent leurs projets de fin d'études, et nous leur apprenons à travailler avec les standards de programmation professionnels et les infrastructures sécurisées que les entreprises recherchent aujourd'hui."
+                        },
+                        {
+                                "question": "Dois-je avoir une expérience préalable en informatique pour m'inscrire ?",
+                                "answer": "Pas forcément ! Nous avons des parcours spéciaux pour les débutants qui partent de zéro, et des parcours avancés pour les personnes qui ont déjà les bases et veulent se spécialiser davantage en cybersécurité, DevOps ou programmation."
+                        },
+                        {
+                                "question": "Délivrez-vous un certificat à la fin de la formation ?",
+                                "answer": "Actuellement, nous ne délivrons pas de certificats, car notre objectif principal est que vous acquériez de vraies compétences et construisiez un portfolio solide rempli de projets qui convaincra les entreprises bien plus qu'un simple bout de papier. Cependant, nous travaillons pour proposer des certificats dans un avenir proche."
+                        },
+                        {
+                                "question": "Si je bloque sur un code ou un projet, y a-t-il quelqu'un pour m'aider ?",
+                                "answer": "Vous ne serez jamais seul ! Dès votre inscription, vous rejoindrez la communauté DHAD Hackers. Vous y trouverez des mentors et des développeurs qui répondront à vos questions et vous guideront étape par étape."
+                        },
+                        {
+                                "question": "Ai-je besoin d'un ordinateur (PC) très performant pour étudier avec vous ?",
+                                "answer": "Pour la plupart des formations comme le développement web, un ordinateur classique est amplement suffisant. Pour les spécialités avancées, nous vous montrons comment travailler avec des outils légers ou utiliser des plateformes Cloud pour ne pas surcharger votre PC."
                         }
                 ]
         }

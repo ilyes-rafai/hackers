@@ -28,8 +28,8 @@ export default function Home() {
                                                 cursorRadius={500}
                                                 cursorForce={0.1}
                                                 bulgeOnly
-                                                gradientFrom="#EE2F03"
-                                                gradientTo="#EE2F03"
+                                                gradientFrom="#F61500"
+                                                gradientTo="#F61500"
                                                 glowColor="#000000"
                                         />
                                 </div>
@@ -41,9 +41,8 @@ export default function Home() {
 
                         <Hero />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div id="formDhad" className="h-[10vh] sm:h-[20vh]"></div>
 
-                        <div id="formDhad"></div>
                         <div className="h-[10vh] sm:h-[20vh] flex justify-center items-center bg-black ">
                                 <h1 className="text-white text-9xl font-bold">FORM HERE</h1>
                         </div>

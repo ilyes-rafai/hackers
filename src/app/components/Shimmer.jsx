@@ -1,13 +1,11 @@
 "use client";
 
-import Link from "next/link"; // For Next.js client routing
 import React from "react";
 
 export default function ShimmerButton({
         text,
         className = "",
         type = "button", // "button" | "submit" | "reset"
-        href, // If provided, renders as an anchor link instead
         onClick, // Handle standard click actions
         disabled = false, // Prevents interaction when loading/invalid
 }) {
@@ -27,16 +25,36 @@ export default function ShimmerButton({
 
         // The outer border & animation container styles
         const wrapperClasses = `
-    relative inline-flex items-center justify-center p-[1.5px] 
-    bg-neutral-300 dark:bg-black rounded-full overflow-hidden group w-full 
+    w-fit relative inline-flex items-center justify-center p-[1.5px] 
+    bg-neutral-300 dark:bg-black rounded-full overflow-hidden group 
     transition-opacity duration-200
     ${disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : "cursor-pointer"}
     ${className}
   `;
 
-        // Inner interactive body styles
-        const innerContent = (
-                <>
+        // Custom click handler for smooth scrolling
+        const handleClick = (e) => {
+                // 1. Find the target section by its ID
+                const targetElement = document.getElementById("formDhad");
+
+                // 2. If it exists on the page, scroll to it smoothly
+                if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+
+                // 3. Run any other onClick logic you passed to the component
+                if (onClick) {
+                        onClick(e);
+                }
+        };
+
+        return (
+                <button
+                        type={type}
+                        className={wrapperClasses}
+                        onClick={handleClick} // Replaced onClick with the new handleClick function
+                        disabled={disabled}
+                >
                         <style>{customCss}</style>
 
                         {/* Background conic gradient spinner element - hidden if button is disabled */}
@@ -53,22 +71,6 @@ export default function ShimmerButton({
                         <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 text-white bg-neutral-950/90 rounded-full group-hover:bg-neutral-900/90 transition-colors duration-300 gap-2">
                                 {text || "Get Started"}
                         </span>
-                </>
-        );
-
-        // Behavior A: If an "href" property is passed, seamlessly render as a Next.js Link tag
-        if (href && !disabled) {
-                return (
-                        <Link href={href} className={wrapperClasses} onClick={onClick}>
-                                {innerContent}
-                        </Link>
-                );
-        }
-
-        // Behavior B: Default to rendering a raw HTML <button> tag for standard click execution or Form submission
-        return (
-                <button type={type} className={wrapperClasses} onClick={onClick} disabled={disabled}>
-                        {innerContent}
                 </button>
         );
 }

@@ -11,9 +11,8 @@ export default function Title({ children, as: Tag = "h1" }) {
         return (
                 <Tag
                         className={`
-                ${locale === "ar" ? "leading-16" : "leading-none"} 
-                ${locale === "ar" && isH1 ? "mt-6" : ""} 
-                text-balance text-4xl sm:text-6xl mb-8 tracking-tight font-bold
+                ${locale === "ar" ? "leading-15 md:leading-21" : "leading-16"} 
+                text-balance mt-6 text-5xl sm:text-7xl mb-8 tracking-tight font-bold
             `}
                 >
                         {children}

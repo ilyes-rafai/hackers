@@ -56,11 +56,11 @@ export default function SwiperRoads() {
                                                 spaceBetween: 20,
                                         },
                                         768: {
-                                                slidesPerView: 3,
+                                                slidesPerView: 4,
                                                 spaceBetween: 40,
                                         },
                                         1024: {
-                                                slidesPerView: 4,
+                                                slidesPerView: 6,
                                                 spaceBetween: 50,
                                         },
                                 }}

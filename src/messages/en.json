@@ -1,40 +1,46 @@
 {
+        "whatsapp_message": "Hello DHAD Hackers! \n I am looking to enroll in one of your ready-made learning tracks. Could you please share more information regarding the available schedules and next steps?",
         "Hero": {
-                "label": "Built for all ages and skill levels.",
-                "title_part1": "Master Tech Skills with",
-                "title_highlight": "Step-by-Step Guidance",
-                "description": "Practical tutoring in coding, design, and cybersecurity.",
-                "button_text": "Get Started"
+                "label": "From computer basics to mastering programming and cybersecurity",
+                "title_part1": "Looking for training",
+                "title_highlight": " coding & IT?",
+                "description": "We have the right training for you, whether you want to learn Excel and Word, build websites and software, or even master ethical hacking.",
+                "button_text": "Start learning now"
         },
-
         "Road": {
-                "title_highlight": "Ready-Made",
-                "title_rest": "Paths",
-                "description": "Master coding, design, or cybersecurity. Follow a clear, practical path with step-by-step tutoring.",
-                "button_text": "Enroll via WhatsApp",
-                "whatsapp_message": "Hello DHAD Hackers! I am looking to enroll in one of your ready-made learning tracks. Could you please share more information regarding the available schedules and next steps?"
+                "title_highlight": "Tracks",
+                "title_rest": " ready to learn",
+                "description": "Master programming, design, or cybersecurity. Follow a clear and practical path with step-by-step guidance.",
+                "button_text": "Start learning now"
         },
-        "Custom": {
-                "title_part1": "Architect Your",
-                "title_highlight": "Syllabus Pipeline",
-                "description": "Your goals aren’t pre-built, your learning shouldn't be either. Select core blocks from our curriculum matrix to compile an educational roadmap tailored entirely to you."
+        "Fab": {
+                "cta_text": "Ready to start your journey? Register with us now and build your future in the tech field.",
+                "cta_button": "Start learning now",
+                "title_1": "Learn the skills in demand right now",
+                "description1": "Master the exact skills and tools highly requested by companies today, allowing you to easily secure your place in the job market.",
+                "title_2": "Choose the time and place that suit you",
+                "description2": "Your life is important. We give you the freedom to choose your exact learning time and location, whether at home or at our center.",
+                "title_3": "A complete platform for the best learning",
+                "description3": "We offer an integrated tech environment with practical application and personal mentoring. Join our community to win side by side.",
+                "title_4": "Years of experience to shorten your path",
+                "description4": "We don't just teach theory; we share our expertise and years of practical field experience, so you can become a true professional."
         },
         "Modality": {
-                "title_highlight": "How You Learn",
-                "title_rest": "Choose",
-                "description": "We offer multiple learning formats and flexible hours designed to match your routine. Pick the setting and the time that helps you focus, learn, and succeed.",
+                "title_highlight": "learning method",
+                "title_rest": "Choose your ",
+                "description": "We offer multiple learning methods and flexible hours designed to fit your routine. Choose the setting and time that help you focus, learn, and succeed.",
                 "online_title": "Online Learning",
-                "online_desc": "Join interactive virtual classrooms live from absolute anywhere.",
-                "home_title": "At Your Home",
-                "home_desc": "Get private, one-on-one remote coaching right from your space.",
-                "onsite_title": "On-Site at EMIG",
-                "onsite_desc": "Learn inside a professional tech environment directly in Oujda.",
-                "location_hint": "(Located near Lycée Abdel Moumen)"
+                "online_desc": "Join interactive virtual classrooms live from anywhere.",
+                "home_title": "At your home",
+                "home_desc": "Get private, 1-on-1 direct training from your own space.",
+                "onsite_title": "At the EMIG center",
+                "onsite_desc": "Learn in a professional technical environment right in the city of Oujda.",
+                "location_hint": "(Located near Abdelmoumen High School)"
         },
         "Testimonials": {
-                "title_part1": "Little",
-                "title_part2": "from Our",
-                "title_highlight": "Community"
+                "title_part1": "Some",
+                "title_part2": "of",
+                "title_highlight": "our community"
         },
         "Faq": {
                 "title": "Frequently Asked Questions"
@@ -42,25 +48,41 @@
         "Footer": {
                 "rights": "All rights reserved.",
                 "trademark": "Trademark Policy",
-                "privacy": "Privacy policy"
+                "privacy": "Privacy Policy"
         },
         "Accordion": {
                 "items": [
                         {
-                                "question": "What is the primary focus of DHAD Hackers?",
-                                "answer": "DHAD Hackers focuses on bridging the gap between theoretical knowledge and practical infrastructure engineering."
+                                "question": "What are the specialties taught at DHAD Hackers?",
+                                "answer": "We focus on high-demand fields in the market like web development (Laravel, React) and cybersecurity (ethical hacking and securing), in addition to training in computer basics and design."
                         },
                         {
-                                "question": "Do I need prior experience to join?",
-                                "answer": "Our coaching is structured to support all levels, from beginners to experienced developers."
+                                "question": "Will the classes be in-person or online?",
+                                "answer": "We give you the freedom to choose! You can attend in person at our center and benefit from direct mentoring, or study online from home at the pace that suits you."
                         },
                         {
-                                "question": "How does DHAD Hackers approach infrastructure security?",
-                                "answer": "We prioritize a 'security-first' architecture, teaching you how to build hardened, isolated environments."
+                                "question": "Does the training include only theory or practical work too?",
+                                "answer": "Our entire focus is on practical application. You will work on real projects and participate in technical challenges so that when you finish the training, you are ready for the job market or freelance work."
                         },
                         {
-                                "question": "Can I use DHAD Hackers resources for my academic projects?",
-                                "answer": "Absolutely. We are designed to help students at institutions like SUPMTI, EHEI, and EMIG excel in their PFE and academic projects."
+                                "question": "Do you help students with their graduation projects (PFE)?",
+                                "answer": "Absolutely! We provide special mentoring for students to succeed in their graduation projects, and we teach them to work with professional programming standards and secure infrastructure that companies are looking for today."
+                        },
+                        {
+                                "question": "Do I need prior experience in IT to register?",
+                                "answer": "Not necessarily! We have special tracks for beginners to start from scratch, and advanced tracks for people who already have the basics and want to specialize more in cybersecurity, DevOps, or programming."
+                        },
+                        {
+                                "question": "Do you provide a certificate when I finish the training?",
+                                "answer": "Currently, we don't provide certificates, as our main goal is for you to acquire real skills and build a strong portfolio full of projects that convinces companies more than any piece of paper. However, we are working to provide certificates in the near future."
+                        },
+                        {
+                                "question": "If I get stuck on a code or project, is there someone to help me?",
+                                "answer": "You will never be alone! Once you register, you will join the DHAD Hackers community. You will find mentors and developers with you who will answer your questions and guide you step by step."
+                        },
+                        {
+                                "question": "Do I need a high-spec computer (PC) to study with you?",
+                                "answer": "For most trainings like web development, a regular computer is more than enough. As for advanced specialties, we show you how to work with lightweight tools or use cloud platforms so you don't overwhelm your PC."
                         }
                 ]
         }

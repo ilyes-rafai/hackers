@@ -27,7 +27,7 @@ export default function Footer() {
 
         return (
                 <footer className="py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-                        <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
+                        <div className="max-w-9/12 mx-auto flex flex-col items-center relative z-10">
                                 {/* <div className="mb-6 w-full">
                                         <Logofull
                                                 width="100%"

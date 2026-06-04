@@ -11,7 +11,7 @@ export default function Testimonials() {
 
         return (
                 <section className="grid text-center items-center grid-cols-1 gap-8">
-                        <div className="max-w-7xl px-4 mx-auto">
+                        <div className="max-w-9/12 px-4 mx-auto">
                                 <Title as="h2">
                                         {t("title_part1")}
                                         <span className="inline-block align-middle mx-2">
@@ -32,7 +32,7 @@ export default function Testimonials() {
                                                                         y2="100%"
                                                                 >
                                                                         <stop offset="0%" stopColor="#ff0000" />
-                                                                        <stop offset="100%" stopColor="#EE2F03" />
+                                                                        <stop offset="100%" stopColor="#F61500" />
                                                                 </linearGradient>
                                                         </defs>
                                                         <path

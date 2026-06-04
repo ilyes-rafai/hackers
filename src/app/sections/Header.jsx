@@ -6,7 +6,7 @@ import LanguageSwitcher from "../components/LangSwitcher";
 export default function Header() {
         return (
                 <div className="sticky top-8 w-11/12 mx-auto z-99 mt-8 p-4 px-16 backdrop-blur-md bg-white/5 rounded-full">
-                        <div className="max-w-7xl mx-auto flex justify-between items-center">
+                        <div className="max-w-9/12 mx-auto flex justify-between items-center">
                                 <Logofull className="w-40 h-auto" />
                                 <LanguageSwitcher />
                         </div>

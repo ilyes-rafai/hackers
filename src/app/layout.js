@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Alexandria, Poppins } from "next/font/google";
 import ScrollToTop from "./components/ScrollToTop";
+import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default async function RootLayout({ children }) {
                                 <NextIntlClientProvider messages={messages}>
                                         {children}
                                         <ScrollToTop />
+                                        <Whatsapp />
                                 </NextIntlClientProvider>
                         </body>
                 </html>

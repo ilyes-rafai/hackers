@@ -31,7 +31,7 @@ export default function ScrollToTop() {
                         {isVisible && (
                                 <button
                                         onClick={scrollToTop}
-                                        className="cursor-pointer fixed bottom-8 right-8 z-50 p-3 bg-[#FF0000] text-white rounded-full shadow-lg hover:bg-[#EE2F03] transition-all duration-300 animate-in fade-in zoom-in"
+                                        className="cursor-pointer fixed bottom-22 right-8 z-50 p-2 bg-[#FF0000] text-white rounded-full shadow-lg hover:bg-[#F61500] transition-all duration-300 animate-in fade-in zoom-in"
                                         aria-label="Scroll to top"
                                 >
                                         {/* You can replace this with an icon from lucide-react */}
