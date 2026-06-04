@@ -9,7 +9,8 @@ import Title from "../components/Title";
 
 function Hero() {
         const t = useTranslations("Hero");
-
+        const WHATSAPP_NUMBER = "212727283846";
+        const message = t("whatsapp_message");
         return (
                 <section className="flex flex-wrap max-w-7xl px-4 mx-auto sm:gap-8 items-center">
                         <div className="flex flex-col justify-start items-start flex-2">
@@ -20,7 +21,7 @@ function Hero() {
 
                                 <p className="text-balance sm:text-xl mb-12 text-neutral-400">{t("description")}</p>
 
-                                <ShimmerButton text={t("button_text")} className="w-fit!" />
+                                <ShimmerButton href="#formDhad" text={t("button_text")} className="w-full sm:w-auto" />
                         </div>
 
                         <div className="flex justify-center mx-auto">

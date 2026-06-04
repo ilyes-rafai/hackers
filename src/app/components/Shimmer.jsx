@@ -50,7 +50,7 @@ export default function ShimmerButton({
                                 />
                         )}
 
-                        <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 text-white bg-neutral-950/90 rounded-full group-hover:bg-neutral-900/90 transition-colors duration-300">
+                        <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 text-white bg-neutral-950/90 rounded-full group-hover:bg-neutral-900/90 transition-colors duration-300 gap-2">
                                 {text || "Get Started"}
                         </span>
                 </>
@@ -59,7 +59,7 @@ export default function ShimmerButton({
         // Behavior A: If an "href" property is passed, seamlessly render as a Next.js Link tag
         if (href && !disabled) {
                 return (
-                        <Link href={href} target="_blank" className={wrapperClasses} onClick={onClick}>
+                        <Link href={href} className={wrapperClasses} onClick={onClick}>
                                 {innerContent}
                         </Link>
                 );

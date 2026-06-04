@@ -1,6 +1,6 @@
 import DotField from "./components/DotField";
 import SoftAurora from "./components/SoftAurora";
-import CustomRoadmapBuilder from "./sections/Custom";
+import Fab from "./sections/Fab";
 import Faq from "./sections/Faq";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
@@ -16,7 +16,7 @@ export default function Home() {
                                 <SoftAurora />
                         </div>
 
-                        <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
+                        {/* <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
                                 <div style={{ width: "100%", height: "100vh", position: "relative" }}>
                                         <DotField
                                                 dotRadius={2}
@@ -33,7 +33,7 @@ export default function Home() {
                                                 glowColor="#000000"
                                         />
                                 </div>
-                        </div>
+                        </div> */}
 
                         <Header />
 
@@ -43,21 +43,20 @@ export default function Home() {
 
                         <div className="h-[10vh] sm:h-[20vh]"></div>
 
+                        <div id="formDhad"></div>
+                        <div className="h-[10vh] sm:h-[20vh] flex justify-center items-center bg-black ">
+                                <h1 className="text-white text-9xl font-bold">FORM HERE</h1>
+                        </div>
+
+                        <div className="h-[10vh] sm:h-[20vh]"></div>
+
+                        <Fab />
+
+                        <div className="h-[10vh] sm:h-[20vh]"></div>
+
                         <Road />
 
                         <div className="h-[20vh]"></div>
-
-                        {/* <CustomRoadmapBuilder />
-
-                        <div className="h-[20vh]"></div> */}
-
-                        {/* <div className="h-[20vh]"></div> */}
-
-                        {/* <div className="bg-white/5 h-[50vh] pointer-events-none flex justify-center items-center backdrop-blur-md">
-                                <div className="text-9xl text-[#FF0000] font-black">CTA</div>
-                        </div> */}
-
-                        {/* <div className="h-[20vh]"></div> */}
 
                         <Modality />
 

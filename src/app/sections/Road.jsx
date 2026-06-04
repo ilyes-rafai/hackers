@@ -5,7 +5,6 @@ import AuroraText from "../components/Aurora";
 import ShimmerButton from "../components/Shimmer";
 import SwiperRoads from "../components/SwiperRoads";
 import Title from "../components/Title";
-import VerticalImageMarqueeGrid from "../components/VerticalMarquee";
 
 export default function Road() {
         const t = useTranslations("Road");
@@ -34,10 +33,7 @@ export default function Road() {
 
                         {/* shape */}
                         <div className="flex items-center justify-center relative">
-                                {/* <TabsViewFancy /> */}
                                 <SwiperRoads />
-                                {/* <VerticalImageMarqueeGrid /> */}
-                                {/* <Image src="/img/roadmaps/roadmap1.png" alt="Road" fill className="object-contain" /> */}
                         </div>
                 </section>
         );

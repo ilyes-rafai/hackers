@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { Kufam, Poppins } from "next/font/google";
+import { Alexandria, Poppins } from "next/font/google";
 import ScrollToTop from "./components/ScrollToTop";
 import "./globals.css";
 
@@ -10,17 +10,17 @@ const poppins = Poppins({
         variable: "--font-poppins",
 });
 
-const kufam = Kufam({
+const alexandria = Alexandria({
         subsets: ["arabic"],
         weight: ["400", "500", "600", "700"],
-        variable: "--font-kufam",
+        variable: "--font-alexandria",
 });
 
 export default async function RootLayout({ children }) {
         const locale = await getLocale();
         const messages = await getMessages();
 
-        const fontClass = locale === "ar" ? kufam.className : poppins.className;
+        const fontClass = locale === "ar" ? alexandria.className : poppins.className;
 
         return (
                 <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="h-full antialiased">
