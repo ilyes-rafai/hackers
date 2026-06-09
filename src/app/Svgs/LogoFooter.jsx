@@ -3,26 +3,32 @@ import React from "react";
 export default function LogoFooter({ className, primaryColor = "#FF0000" }) {
         return (
                 <svg width="100%" height="auto" viewBox="0 0 16767 1039" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M249.29 792.176H412.851V1038.43H0V369.383H249.29V792.176Z" fill="#0C0C0C" />
+                        <path
+                                d="M249.29 792.176H412.851V1038.43H0V369.383H249.29V792.176Z"
+                                className="fill-black dark:fill-white"
+                        />
                         <path
                                 d="M1141.37 0C1180.41 0.00159455 1211.96 31.1503 1211.96 69.7174V894.53L1066.27 1038.43H703.704V792.176H962.648V246.255H355.926L249.29 0H1141.37Z"
-                                fill="#0C0C0C"
+                                className="fill-black dark:fill-white"
                         />
-                        <path d="M1761.37 1038.43H1512.08V0H1761.37V1038.43Z" fill="#0C0C0C" />
+                        <path d="M1761.37 1038.43H1512.08V0H1761.37V1038.43Z" className="fill-black dark:fill-white" />
                         <path
                                 d="M2724.04 1038.43H2474.73V642.343H2010.68L1904.05 396.088H2724.04V1038.43Z"
-                                fill="#0C0C0C"
+                                className="fill-black dark:fill-white"
                         />
                         <path
                                 d="M4427.92 1038.43H4147.09L3729.58 246.255H3677.01L3390.18 792.176H3816.7L3945.84 1038.43H2978.67L3525.34 0H3881.27L4427.92 1038.43Z"
-                                fill="#0C0C0C"
+                                className="fill-black dark:fill-white"
                         />
-                        <path d="M4948.32 792.176H5188.5V1038.43H4699.01V369.383H4948.32V792.176Z" fill="#0C0C0C" />
+                        <path
+                                d="M4948.32 792.176H5188.5V1038.43H4699.01V369.383H4948.32V792.176Z"
+                                className="fill-black dark:fill-white"
+                        />
                         <path
                                 d="M5840.39 0C5879.44 0.00326085 5910.97 31.1514 5910.97 69.7174V894.53L5765.3 1038.43H5479.36V792.176H5661.68V246.255H5054.96L4948.32 0H5840.39Z"
-                                fill="#0C0C0C"
+                                className="fill-black dark:fill-white"
                         />
-                        <path d="M2724.04 272.96H2474.73V0H2724.04V272.96Z" fill="#0C0C0C" />
+                        <path d="M2724.04 272.96H2474.73V0H2724.04V272.96Z" className="fill-black dark:fill-white" />
                         <path
                                 d="M7365.15 272.997V0.151367H7617.43V272.997H7365.15ZM6391 1038.15V0.151367H6643.28V1038.15H6391ZM6787.65 396.074H7617.43V1038.15H7365.15V642.228H6895.55L6787.65 396.074Z"
                                 fill="#FF0000"
