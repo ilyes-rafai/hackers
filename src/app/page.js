@@ -1,5 +1,6 @@
-import DotField from "./components/DotField";
+import AnimatedBlob from "./components/AnimatedBlob";
 import SoftAurora from "./components/SoftAurora";
+import Cta from "./sections/Cta";
 import Fab from "./sections/Fab";
 import Faq from "./sections/Faq";
 import Footer from "./sections/Footer";
@@ -12,27 +13,17 @@ import Testimonials from "./sections/Testimonials";
 export default function Home() {
         return (
                 <div>
-                        <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
+                        <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-30 w-full">
                                 <SoftAurora />
                         </div>
 
-                        {/* <div className="fixed inset-0 -z-10 w-full rotate-180  opacity-30">
-                                <div style={{ width: "100%", height: "100vh", position: "relative" }}>
-                                        <DotField
-                                                dotRadius={2}
-                                                dotSpacing={14}
-                                                bulgeStrength={67}
-                                                glowRadius={160}
-                                                sparkle={true}
-                                                waveAmplitude={0}
-                                                cursorRadius={500}
-                                                cursorForce={0.1}
-                                                bulgeOnly
-                                                gradientFrom="#F61500"
-                                                gradientTo="#F61500"
-                                                glowColor="#000000"
-                                        />
-                                </div>
+                        {/* <div className="fixed w-full flex -z-10 h-fit left-0 bottom-0 border border-yellow-500">
+                                <AnimatedBlob />
+                                <AnimatedBlob />
+                                <AnimatedBlob />
+                                <AnimatedBlob />
+                                <AnimatedBlob />
+                                <AnimatedBlob />
                         </div> */}
 
                         <Header />
@@ -43,11 +34,11 @@ export default function Home() {
 
                         <div id="formDhad" className="h-[10vh] sm:h-[20vh]"></div>
 
-                        <div className="h-[10vh] sm:h-[20vh] flex justify-center items-center bg-black ">
+                        {/* <div className="h-[10vh] sm:h-[20vh] flex justify-center items-center bg-black ">
                                 <h1 className="text-white text-9xl font-bold">FORM HERE</h1>
                         </div>
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="h-[10vh] sm:h-[20vh]"></div> */}
 
                         <Fab />
 
@@ -72,6 +63,10 @@ export default function Home() {
                         <div className="h-[20vh]"></div>
 
                         <Faq />
+
+                        <div className="h-[20vh]"></div>
+
+                        <Cta />
 
                         <div className="h-[20vh]"></div>
 

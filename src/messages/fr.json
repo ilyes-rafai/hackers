@@ -85,5 +85,11 @@
                                 "answer": "Pour la plupart des formations comme le développement web, un ordinateur classique est amplement suffisant. Pour les spécialités avancées, nous vous montrons comment travailler avec des outils légers ou utiliser des plateformes Cloud pour ne pas surcharger votre PC."
                         }
                 ]
+        },
+        "CTA": {
+                "title_part1": "N'attendez pas,",
+                "title_highlight": "votre futur n'attendra pas.",
+                "description": "Le paysage technologique évolue chaque jour. Réservez votre place dans notre prochaine promotion et commencez à acquérir les compétences qui définiront votre carrière.",
+                "button_text": "Démarrer maintenant"
         }
 }

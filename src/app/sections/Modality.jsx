@@ -4,18 +4,19 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import AuroraText from "../components/Aurora";
+import Text from "../components/Text";
 import Title from "../components/Title";
 
 export default function Modality() {
         const t = useTranslations("Modality");
 
         return (
-                <section className="grid text-center items-center grid-cols-1 max-w-9/12 px-4 mx-auto gap-16">
+                <section className="grid text-center items-center grid-cols-1 dhad-container gap-16">
                         <div className="">
                                 <Title as="h2">
                                         {t("title_rest")} <AuroraText>{t("title_highlight")}</AuroraText>
                                 </Title>
-                                <p className="text-balance text-neutral-400 sm:text-xl">{t("description")}</p>
+                                <Text className="mb-8">{t("description")}</Text>
                         </div>
 
                         <div className="flex justify-center flex-wrap items-start gap-16 text-center sm:text-left">
@@ -25,14 +26,14 @@ export default function Modality() {
                                                 <Image
                                                         src="/img/learn/online.png"
                                                         alt="Online Learning"
-                                                        width={250}
-                                                        height={250}
+                                                        width={200}
+                                                        height={200}
                                                         loading="lazy"
                                                 />
                                         </div>
                                         <div className="text-balance">
                                                 <h4 className="text-xl font-medium mb-2">{t("online_title")}</h4>
-                                                <p className="text-neutral-400">{t("online_desc")}</p>
+                                                <Text>{t("online_desc")}</Text>
                                         </div>
                                 </div>
 
@@ -42,14 +43,14 @@ export default function Modality() {
                                                 <Image
                                                         src="/img/learn/home.png"
                                                         alt="At Your Home"
-                                                        width={250}
-                                                        height={250}
+                                                        width={200}
+                                                        height={200}
                                                         loading="lazy"
                                                 />
                                         </div>
                                         <div className="text-balance">
                                                 <h4 className="text-xl font-medium mb-2">{t("home_title")}</h4>
-                                                <p className="text-neutral-400">{t("home_desc")}</p>
+                                                <Text>{t("home_desc")}</Text>
                                         </div>
                                 </div>
 
@@ -59,14 +60,14 @@ export default function Modality() {
                                                 <Image
                                                         src="/img/learn/school.png"
                                                         alt="On-Site Learning"
-                                                        width={250}
-                                                        height={250}
+                                                        width={200}
+                                                        height={200}
                                                         loading="lazy"
                                                 />
                                         </div>
                                         <div className="text-balance">
                                                 <h4 className="text-xl font-medium mb-2">{t("onsite_title")}</h4>
-                                                <p className="text-neutral-400">{t("onsite_desc")}</p>
+                                                <Text>{t("onsite_desc")}</Text>
                                                 <a
                                                         href="https://maps.app.goo.gl/BeLiPRd9iRCP3eCe8"
                                                         target="_blank"

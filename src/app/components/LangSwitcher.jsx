@@ -1,8 +1,17 @@
 "use client";
 
 import Cookies from "js-cookie";
+import { Languages } from "lucide-react";
 import { useLocale } from "next-intl";
 import React from "react";
+
+import { Button } from "@/components/ui/button";
+import {
+        DropdownMenu,
+        DropdownMenuContent,
+        DropdownMenuItem,
+        DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function LanguageSwitcher() {
         const currentLocale = useLocale();
@@ -14,21 +23,26 @@ export default function LanguageSwitcher() {
         };
 
         return (
-                <div className="flex gap-4">
-                        {locales.map((loc) => (
-                                <button
-                                        key={loc}
-                                        onClick={() => handleLanguageChange(loc)}
-                                        className={`font-mono text-sm uppercase transition-all ${
-                                                currentLocale === loc
-                                                        ? "text-[#FF0000] font-bold"
-                                                        : "text-white hover:text-neutral-400"
-                                        }`}
-                                >
-                                        {loc.toUpperCase()}
-                                        {currentLocale === loc && <span className="block h-0.5 bg-[#FF0000] mt-1" />}
-                                </button>
-                        ))}
-                </div>
+                <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                                <Button variant="outline" size="icon">
+                                        <Languages className="h-[1.2rem] w-[1.2rem]" />
+                                        <span className="sr-only">Toggle language</span>
+                                </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end">
+                                {locales.map((loc) => (
+                                        <DropdownMenuItem
+                                                key={loc}
+                                                onClick={() => handleLanguageChange(loc)}
+                                                className={`cursor-pointer uppercase ${
+                                                        currentLocale === loc ? "text-[#FF0000] font-bold" : ""
+                                                }`}
+                                        >
+                                                {loc.toUpperCase()}
+                                        </DropdownMenuItem>
+                                ))}
+                        </DropdownMenuContent>
+                </DropdownMenu>
         );
 }

@@ -27,7 +27,7 @@ export default function ShimmerButton({
         const wrapperClasses = `
     w-fit relative inline-flex items-center justify-center p-[1.5px] 
     bg-neutral-300 dark:bg-black rounded-full overflow-hidden group 
-    transition-opacity duration-200
+    transition-all duration-300 hover:scale-105
     ${disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : "cursor-pointer"}
     ${className}
   `;
@@ -68,7 +68,7 @@ export default function ShimmerButton({
                                 />
                         )}
 
-                        <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 text-white bg-neutral-950/90 rounded-full group-hover:bg-neutral-900/90 transition-colors duration-300 gap-2">
+                        <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 font-semibold bg-white/95 dark:text-white dark:bg-neutral-950/90 rounded-full gap-2">
                                 {text || "Get Started"}
                         </span>
                 </button>

@@ -11,9 +11,11 @@ export default function Title({ children, as: Tag = "h1" }) {
         return (
                 <Tag
                         className={`
-                ${locale === "ar" ? "leading-15 md:leading-21" : "leading-16"} 
-                text-balance mt-6 text-5xl sm:text-7xl mb-8 tracking-tight font-bold
-            `}
+    ${locale === "ar" ? "leading-15 md:leading-21" : ""} 
+    text-balance font-bold tracking-tight my-8 
+    ${Tag === "h1" ? "text-4xl sm:text-5xl lg:text-6xl" : ""}
+    ${Tag === "h2" ? "text-3xl sm:text-4xl" : ""}
+  `}
                 >
                         {children}
                 </Tag>

@@ -10,8 +10,8 @@ export default function Testimonials() {
         const t = useTranslations("Testimonials");
 
         return (
-                <section className="grid text-center items-center grid-cols-1 gap-8">
-                        <div className="max-w-9/12 px-4 mx-auto">
+                <section className="">
+                        <div className="text-center mb-16 dhad-container">
                                 <Title as="h2">
                                         {t("title_part1")}
                                         <span className="inline-block align-middle mx-2">

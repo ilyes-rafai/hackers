@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Logofull({ className, primaryColor = "#FF0000", secondaryColor = "#FFFFFF" }) {
+export default function Logofull({ className, primaryColor = "#FF0000" }) {
         return (
                 <svg viewBox="0 0 818 165" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
                         <path
@@ -16,30 +16,30 @@ export default function Logofull({ className, primaryColor = "#FF0000", secondar
 
                         <path
                                 d="M335.879 67.7249H349.807V88.7778H314.651V31.5794H335.879V67.7249Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
                         <path
                                 d="M411.844 0C415.169 0.000136322 417.855 2.66311 417.856 5.9603V76.4754L405.449 88.7778H374.575V67.7249H396.625V21.0529H344.96L335.879 0H411.844Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
-                        <path d="M464.641 88.7778H443.412V0H464.641V88.7778Z" fill={secondaryColor} />
+                        <path d="M464.641 88.7778H443.412V0H464.641V88.7778Z" className="fill-black dark:fill-white" />
                         <path
                                 d="M546.617 88.7778H525.387V54.9153H485.871L476.79 33.8624H546.617V88.7778Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
                         <path
                                 d="M691.711 88.7778H667.796L632.244 21.0529H627.767L603.342 67.7249H639.662L650.66 88.7778H568.3L614.852 0H645.161L691.711 88.7778Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
                         <path
                                 d="M736.026 67.7249H756.478V88.7778H714.795V31.5794H736.026V67.7249Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
                         <path
                                 d="M811.99 0C815.315 0.000278777 818 2.6632 818 5.9603V76.4754L805.596 88.7778H781.246V67.7249H796.772V21.0529H745.106L736.026 0H811.99Z"
-                                fill={secondaryColor}
+                                className="fill-black dark:fill-white"
                         />
-                        <path d="M546.617 23.336H525.387V0H546.617V23.336Z" fill={secondaryColor} />
+                        <path d="M546.617 23.336H525.387V0H546.617V23.336Z" className="fill-black dark:fill-white" />
 
                         <path
                                 d="M361.889 127.746V114.461H374.122V127.746H361.889ZM314.651 165V114.461H326.884V165H314.651ZM333.885 133.738H374.122V165H361.889V145.723H339.117L333.885 133.738Z"

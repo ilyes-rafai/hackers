@@ -189,7 +189,7 @@ const OrbitingSkill = memo(({ config, angle }) => {
                 >
                         <div
                                 className={`
-                                        relative w-full h-full p-2.5 bg-neutral-950/90 backdrop-blur-sm
+                                        relative w-full h-full p-2.5 dark:bg-neutral-950/90 bg-neutral-100/90 backdrop-blur-sm
                                         rounded-full flex items-center justify-center
                                         transition-all duration-300 cursor-pointer
                                         ${isHovered ? "scale-125 shadow-2xl" : "shadow-lg hover:shadow-xl"}

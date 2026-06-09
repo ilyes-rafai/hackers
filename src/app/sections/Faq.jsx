@@ -9,8 +9,8 @@ export default function Faq() {
         const t = useTranslations("Faq");
 
         return (
-                <section className="max-w-9/12 px-4 mx-auto grid text-center items-center grid-cols-1 gap-8">
-                        <div className="">
+                <section className="dhad-container">
+                        <div className="text-center mb-16">
                                 <Title as="h2">{t("title")}</Title>
                         </div>
 

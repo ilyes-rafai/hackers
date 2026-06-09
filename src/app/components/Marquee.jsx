@@ -3,6 +3,7 @@
 import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 import { useLocale } from "next-intl";
 import React, { useLayoutEffect, useRef, useState } from "react";
+import Text from "./Text";
 
 const testimonialsList1 = [
         {
@@ -60,7 +61,7 @@ const testimonialsList2 = [
 
 const TestimonialCard = ({ data }) => (
         <div
-                className="shrink-0 flex flex-col justify-between p-6 bg-black/40 border-2 border-neutral-900 backdrop-blur-md rounded-2xl select-none"
+                className="shrink-0 flex flex-col justify-between p-6 bg-neutral-100/50 dark:bg-[#090909]/50 backdrop-blur-md rounded-2xl select-none"
                 style={{ width: "340px", marginRight: "24px" }}
         >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -69,9 +70,11 @@ const TestimonialCard = ({ data }) => (
                                 d="M21.01 10h-2.85c.27-1.02 1.01-2.51 3.09-3.03l.76-.19V4h-1c-2.78 0-4.91.77-6.31 2.29c-1.89 2.05-1.7 4.68-1.69 4.71v7c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2m-12 0H6.16c.27-1.02 1.01-2.51 3.09-3.03l.76-.19V4h-1C6.23 4 4.1 4.77 2.7 6.29C.81 8.34 1 10.97 1.01 11v7c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2"
                         />
                 </svg>
-                <p className="text-sm leading-relaxed text-neutral-300 italic mb-6 mt-2">{data.quote}</p>
+                <cite>
+                        <Text className="leading-relaxed mb-6 mt-2">{data.quote}</Text>
+                </cite>
                 <div className="flex flex-col min-w-0">
-                        <span className="text-sm font-semibold tracking-wide text-white truncate">{data.name}</span>
+                        <span className="text-sm font-semibold tracking-wide truncate">{data.name}</span>
                         <span className="text-xs text-neutral-400 truncate">{data.role}</span>
                 </div>
         </div>

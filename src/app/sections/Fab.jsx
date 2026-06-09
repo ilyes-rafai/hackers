@@ -5,62 +5,63 @@ import Image from "next/image";
 import React from "react";
 import AuroraText from "../components/Aurora";
 import ShimmerButton from "../components/Shimmer";
+import Text from "../components/Text";
 import Title from "../components/Title";
 
 export default function Fab() {
         const t = useTranslations("Fab");
 
         return (
-                <div className="relative">
+                <div className="dhad-container">
                         {/* <div className="h-0.5 bg-linear-to-r from-transparent via-[#FF0000] to-transparent"></div> */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center pt-8 max-w-9/12 px-4 mx-auto gap-16 md:gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center pt-8 gap-16 md:gap-8">
                                 <div className="text-balance">
                                         <Image
                                                 src="/img/learn/stacks.png"
                                                 alt="On-Site Learning"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                                 loading="lazy"
                                                 className="mx-auto mb-4"
                                         />
-                                        <h4 className="text-xl font-medium mb-4">{t("title_1")}</h4>
-                                        <p className="text-neutral-400">{t("description1")}</p>
+                                        <h4 className="text-xl font-semibold mb-4">{t("title_1")}</h4>
+                                        <Text>{t("description1")}</Text>
                                 </div>
                                 <div className="text-balance">
                                         <Image
                                                 src="/img/learn/time.png"
                                                 alt="On-Site Learning"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                                 loading="lazy"
                                                 className="mx-auto mb-4"
                                         />
-                                        <h4 className="text-xl font-medium mb-4">{t("title_2")}</h4>
-                                        <p className="text-neutral-400">{t("description2")}</p>
+                                        <h4 className="text-xl font-semibold mb-4">{t("title_2")}</h4>
+                                        <Text>{t("description2")}</Text>
                                 </div>
                                 <div className="text-balance">
                                         <Image
                                                 src="/img/learn/platforme.png"
                                                 alt="On-Site Learning"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                                 loading="lazy"
                                                 className="mx-auto mb-4"
                                         />
-                                        <h4 className="text-xl font-medium mb-4">{t("title_3")}</h4>
-                                        <p className="text-neutral-400">{t("description3")}</p>
+                                        <h4 className="text-xl font-semibold mb-4">{t("title_3")}</h4>
+                                        <Text>{t("description3")}</Text>
                                 </div>
                                 <div className="text-balance">
                                         <Image
                                                 src="/img/learn/knowledge.png"
                                                 alt="On-Site Learning"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                                 loading="lazy"
                                                 className="mx-auto mb-4"
                                         />
-                                        <h4 className="text-xl font-medium mb-4">{t("title_4")}</h4>
-                                        <p className="text-neutral-400">{t("description4")}</p>
+                                        <h4 className="text-xl font-semibold mb-4">{t("title_4")}</h4>
+                                        <Text>{t("description4")}</Text>
                                 </div>
                         </div>
 

@@ -85,5 +85,11 @@
                                 "answer": "For most trainings like web development, a regular computer is more than enough. As for advanced specialties, we show you how to work with lightweight tools or use cloud platforms so you don't overwhelm your PC."
                         }
                 ]
+        },
+        "CTA": {
+                "title_part1": "Don’t Wait,",
+                "title_highlight": "Your Future Won’t.",
+                "description": "The tech landscape evolves every single day. Secure your spot in our upcoming cohort and start building the skills that will define your career.",
+                "button_text": "Get Started Now"
         }
 }
