@@ -64,6 +64,20 @@ export default function Fab() {
                                         <h4 className="text-xl font-semibold mb-4">{t("title_4")}</h4>
                                         <Text>{t("description4")}</Text>
                                 </div>
+                                <div className="text-balance">
+                                        <video width="320" height="240" muted loop preload="none" autoPlay>
+                                                <source src="/videos/knowledge.mp4" type="video/mp4" />
+                                                <track
+                                                        src="/path/to/captions.vtt"
+                                                        kind="subtitles"
+                                                        srcLang="en"
+                                                        label="English"
+                                                />
+                                                Your browser does not support the video tag.
+                                        </video>
+                                        <h4 className="text-xl font-semibold mb-4">{t("title_4")}</h4>
+                                        <Text>{t("description4")}</Text>
+                                </div>
                         </div>
 
                         <div className="flex gap-8 flex-col items-center justify-center mt-16">
