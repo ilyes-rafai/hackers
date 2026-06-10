@@ -18,6 +18,48 @@ const alexandria = Alexandria({
         variable: "--font-alexandria",
 });
 
+export const metadata = {
+        title: 'DHAD Hackers',
+        description: 'Ready to build your tech career? Join DHAD Hackers for expert-led training in coding, design, and ethical hacking. Choose your path: online or on-site in Oujda.',
+        keywords: ['Coding', 'Design', 'Ethical Hacking', 'Tech Training', 'Oujda', 'DHAD Hackers', 'html', 'css', 'javascript', 'python', 'cybersecurity', 'web development', 'programming', 'technology', 'bootcamp', 'informatique', 'formation', 'en ligne', 'codage', 'conception', 'piratage éthique', 'Oujda'],
+        authors: [{ name: 'Ilyes Rafai' }],
+        creator: 'DHAD Hackers',
+        publisher: 'DHAD Hackers',
+        metadataBase: new URL('https://dhadhackers.com'),
+
+        openGraph: {
+                title: 'DHAD Hackers | Tech Training & Bootcamps',
+                description: 'Ready to build your tech career? Join DHAD Hackers for expert-led training in coding, design, and ethical hacking.',
+                url: 'https://dhadhackers.com',
+                siteName: 'DHAD Hackers',
+                locale: 'en_US',
+                type: 'website',
+                images: [
+                        {
+                                url: '/og-image.jpg',
+                                width: 1200,
+                                height: 630,
+                                alt: 'DHAD Hackers',
+                        },
+                ],
+        },
+
+        // Twitter Cards
+        twitter: {
+                card: 'summary_large_image',
+                title: 'DHAD Hackers | Tech Training',
+                description: 'Join DHAD Hackers for expert-led training in coding, design, and ethical hacking.',
+                images: ['/og-image.jpg'],
+        },
+
+        // Favicons and App Icons
+        icons: {
+                icon: '/favicon.ico',
+                shortcut: '/favicon-16x16.png',
+                apple: '/apple-touch-icon.png',
+        },
+};
+
 export default async function RootLayout({ children }) {
         const locale = await getLocale();
         const messages = await getMessages();
