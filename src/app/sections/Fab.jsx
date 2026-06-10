@@ -53,7 +53,8 @@ export default function Fab() {
                                 </div>
                                 <div className="text-balance">
                                         <Image
-                                                src="/img/learn/knowledge.png"
+                                                // src="/img/learn/knowledge.png"
+                                                src="/img/gifs/gif.gif"
                                                 alt="On-Site Learning"
                                                 width={200}
                                                 height={200}
