@@ -14,7 +14,9 @@ export default function Faq() {
                                 <Title as="h2">{t("title")}</Title>
                         </div>
 
-                        <Accordion />
+                        <div className="bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl rounded-lg p-8">
+                                <Accordion />
+                        </div>
                 </section>
         );
 }

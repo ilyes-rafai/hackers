@@ -12,7 +12,7 @@ export default function Fab() {
         const t = useTranslations("Fab");
 
         return (
-                <div className="bg-neutral-200/50 dark:bg-neutral-900/50 backdrop-blur-2xl py-16">
+                <section className="bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl py-16">
                         {/* <div className="h-0.5 bg-linear-to-r from-transparent via-[#FF0000] to-transparent"></div> */}
                         <div className="dhad-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 text-center pt-8 gap-16 md:gap-8">
                                 <div className="text-balance">
@@ -69,6 +69,6 @@ export default function Fab() {
                                 <span className="text-balance sm:text-xl text-center">{t("cta_text")}</span>
                                 <ShimmerButton text={t("cta_button")} />
                         </div>
-                </div>
+                </section>
         );
 }

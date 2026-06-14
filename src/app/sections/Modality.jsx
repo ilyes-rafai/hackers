@@ -11,7 +11,7 @@ export default function Modality() {
         const t = useTranslations("Modality");
 
         return (
-                <section className="bg-neutral-200/50 dark:bg-neutral-900/50 backdrop-blur-2xl py-16">
+                <section className="bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl py-16">
                         <div className="grid text-center items-center grid-cols-1 dhad-container gap-16">
                                 <div className="">
                                         <Title as="h2">
