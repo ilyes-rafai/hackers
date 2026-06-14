@@ -2,20 +2,19 @@
 import { useLocale } from "next-intl";
 import React from "react";
 
-export default function Title({ children, as: Tag = "h1" }) {
+export default function Title({ children, as: Tag = "h1", className = "" }) {
         const locale = useLocale();
-
-        // Check if the tag is 'h1'
-        const isH1 = Tag === "h1";
+        const isAr = locale === "ar";
 
         return (
                 <Tag
                         className={`
-    ${locale === "ar" ? "leading-15 md:leading-21" : ""} 
-    text-balance font-bold tracking-tight my-8 
-    ${Tag === "h1" ? "text-4xl sm:text-5xl lg:text-6xl" : ""}
-    ${Tag === "h2" ? "text-3xl sm:text-4xl" : ""}
-  `}
+                text-balance font-extrabold tracking-tight text-gray-900 dark:text-white
+                ${isAr ? "leading-[1.4] md:leading-[1.5]" : "leading-tight md:leading-tight"} 
+                ${Tag === "h1" ? "text-4xl sm:text-5xl lg:text-7xl mb-6" : ""}
+                ${Tag === "h2" ? "text-3xl sm:text-4xl lg:text-6xl mb-4" : ""}
+                ${className}
+            `}
                 >
                         {children}
                 </Tag>

@@ -13,9 +13,9 @@ import Testimonials from "./sections/Testimonials";
 export default function Home() {
         return (
                 <div>
-                        <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-30 w-full">
+                        {/* <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-30 w-full">
                                 <SoftAurora />
-                        </div>
+                        </div> */}
 
                         {/* <div className="fixed w-full flex -z-10 h-fit left-0 bottom-0 border border-yellow-500">
                                 <AnimatedBlob />
