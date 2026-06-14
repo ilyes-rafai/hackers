@@ -10,10 +10,10 @@
         "Form": {
                 "path": "~/parcours-apprentissage",
                 "system_ready": "Saisissez vos nom et numéro de téléphone pour rejoindre nos parcours et intégrer DHADHackers. Nous vous contacterons dès que possible.",
-                "label_name": "configurer nom_utilisateur=",
-                "placeholder_name": "saisissez_votre_nom_complet",
-                "label_phone": "configurer num_telephone=",
-                "placeholder_phone": "saisissez_votre_numero",
+                "label_name": "set user_name=",
+                "placeholder_name": "saisissez_votre_nom_complet_ici",
+                "label_phone": "set user_phone=",
+                "placeholder_phone": "saisissez_votre_numero_ici",
                 "execute": "./executer",
                 "button": "[ REJOINDRE_MAINTENANT ]"
         },

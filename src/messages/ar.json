@@ -11,9 +11,9 @@
                 "path": "~/roadmap-d-ta3alom",
                 "system_ready": "Dkhl smitek w nemra dyal telfoun bach t-rejoindre les roadmaps dyalna w t-koun joz2 men DHAD Hackers. Ghadi n-contactiwk f aqrab waqt.",
                 "label_name": "set user_name=",
-                "placeholder_name": "dkhl_smitek_kamla",
+                "placeholder_name": "dkhl_smitek_kamla_hna",
                 "label_phone": "set user_phone=",
-                "placeholder_phone": "dkhl_nemra_dyalk",
+                "placeholder_phone": "dkhl_nemra_dyalk_hna",
                 "execute": "./execute",
                 "button": "[ JOIN_DABA ]"
         },

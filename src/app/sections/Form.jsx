@@ -53,7 +53,7 @@ function Form() {
                                                 <input
                                                         type="text"
                                                         id="fullName"
-                                                        className="flex-1 bg-transparent border-none dark:text-neutral-200 text-neutral-800 text-sm focus:ring-0 focus:outline-none caret-[#FF0000] dark:placeholder-neutral-700 placeholder-neutral-300 py-0"
+                                                        className="flex-1 bg-transparent border-none dark:text-neutral-200 text-neutral-800 text-sm focus:ring-0 focus:outline-none caret-[#FF0000] dark:placeholder-neutral-500 placeholder-neutral-600 py-0"
                                                         placeholder={t("placeholder_name")}
                                                         autoComplete="off"
                                                         required
@@ -76,7 +76,7 @@ function Form() {
                                                 <input
                                                         type="tel"
                                                         id="phoneNumber"
-                                                        className="flex-1 bg-transparent border-none dark:text-neutral-200 text-neutral-800 text-sm focus:ring-0 focus:outline-none caret-[#FF0000] dark:placeholder-neutral-700 placeholder-neutral-300 py-0"
+                                                        className="flex-1 bg-transparent border-none dark:text-neutral-200 text-neutral-800 text-sm focus:ring-0 focus:outline-none caret-[#FF0000] dark:placeholder-neutral-500 placeholder-neutral-600 py-0"
                                                         placeholder={t("placeholder_phone")}
                                                         autoComplete="off"
                                                         required

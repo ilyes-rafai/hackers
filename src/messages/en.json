@@ -11,9 +11,9 @@
                 "path": "~/learning-path",
                 "system_ready": "Enter your name and phone number to join our roadmap and become part of DHADHackers. We will contact you shortly via the provided number.",
                 "label_name": "set user_name=",
-                "placeholder_name": "enter_your_full_name",
+                "placeholder_name": "enter_your_full_name_here",
                 "label_phone": "set user_phone=",
-                "placeholder_phone": "enter_your_phone_number",
+                "placeholder_phone": "enter_your_phone_number_here",
                 "execute": "./execute",
                 "button": "[ JOIN_NOW ]"
         },
