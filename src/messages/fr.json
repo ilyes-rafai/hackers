@@ -2,10 +2,20 @@
         "whatsapp_message": "Bonjour DHAD Hackers ! \n Je souhaite m'inscrire à l'un de vos parcours d'apprentissage clés en main. Pourriez-vous me donner plus d'informations sur les horaires disponibles et les prochaines étapes ?",
         "Hero": {
                 "label": "Des bases de l'informatique jusqu'à la maîtrise de la programmation et de la cybersécurité",
-                "title_part1": "À la recherche d'une formation",
-                "title_highlight": " en informatique ?",
+                "title_part1": "À la recherche d'une formation en",
+                "title_highlight": " développement et IT ?",
                 "description": "Nous avons la formation qu'il vous faut, que vous souhaitiez apprendre Excel et Word, créer des sites web et des logiciels, ou même maîtriser le hacking éthique.",
                 "button_text": "Commencer à apprendre"
+        },
+        "Form": {
+                "path": "~/parcours-apprentissage",
+                "system_ready": "Saisissez vos nom et numéro de téléphone pour rejoindre nos parcours et intégrer DHADHackers. Nous vous contacterons dès que possible.",
+                "label_name": "configurer nom_utilisateur=",
+                "placeholder_name": "saisissez_votre_nom_complet",
+                "label_phone": "configurer num_telephone=",
+                "placeholder_phone": "saisissez_votre_numero",
+                "execute": "./executer",
+                "button": "[ REJOINDRE_MAINTENANT ]"
         },
         "Road": {
                 "title_highlight": "Parcours",

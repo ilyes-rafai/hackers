@@ -10,30 +10,40 @@
 }
 
 @layer base {
+
         /* For Chrome, Safari, and Opera */
         ::-webkit-scrollbar {
-                width: 4px; /* Width of the vertical scrollbar */
-                height: 4px; /* Height of the horizontal scrollbar */
+                width: 4px;
+                /* Width of the vertical scrollbar */
+                height: 4px;
+                /* Height of the horizontal scrollbar */
         }
 
         ::-webkit-scrollbar-track {
-                background: #000000; /* Track background color */
+                background: #000000;
+                /* Track background color */
         }
 
         ::-webkit-scrollbar-thumb {
-                background: #ff0000; /* Scrollbar handle color */
-                border-radius: 3px; /* Rounded corners */
+                background: #ff0000;
+                /* Scrollbar handle color */
+                border-radius: 3px;
+                /* Rounded corners */
         }
 
         ::-webkit-scrollbar-thumb:hover {
-                background: #ff0000; /* Handle color on hover */
+                background: #ff0000;
+                /* Handle color on hover */
         }
+
         * {
                 @apply border-border outline-ring/50;
         }
+
         body {
                 @apply bg-background text-foreground;
         }
+
         html {
                 @apply font-sans;
         }
@@ -184,6 +194,7 @@
         0% {
                 transform: rotate(0deg);
         }
+
         100% {
                 transform: rotate(360deg);
         }

@@ -34,15 +34,21 @@ export default function ShimmerButton({
 
         // Custom click handler for smooth scrolling
         const handleClick = (e) => {
-                // 1. Find the target section by its ID
                 const targetElement = document.getElementById("formDhad");
 
-                // 2. If it exists on the page, scroll to it smoothly
                 if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: "smooth" });
+                        // Get the position of the element relative to the document
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+                        // Subtract the offset (e.g., 100px for your navbar)
+                        const offsetPosition = elementPosition - 150;
+
+                        window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth",
+                        });
                 }
 
-                // 3. Run any other onClick logic you passed to the component
                 if (onClick) {
                         onClick(e);
                 }

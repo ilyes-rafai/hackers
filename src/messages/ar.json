@@ -2,10 +2,20 @@
         "whatsapp_message": "سلام DHAD Hackers! \n بغيت نتسجل فواحد من المسارات التعليمية الجاهزة ديالكم. واش ممكن تعطوني معلومات كثر على الأوقات المتاحة والخطوات الجاية؟",
         "Hero": {
                 "label": "من أبجديات المعلوميات إلى احتراف البرمجة والأمن السيبراني",
-                "title_part1": "كتقلب على فورماسيون",
-                "title_highlight": " فلانفورماتيك ؟",
+                "title_part1": "كتقلب على فورماسيون ف",
+                "title_highlight": " الديفلوبمون ولانفورماتيك؟",
                 "description": "عندنا الفورماسيون اللي تناسبك سواء باغي تعلم Excel و Word أو باغي تعلم تصاوب المواقع و البرامج و حتى الهاكينغ الأخلاقي ",
                 "button_text": "بدا التعلم دابا"
+        },
+        "Form": {
+                "path": "~/roadmap-d-ta3alom",
+                "system_ready": "Dkhl smitek w nemra dyal telfoun bach t-rejoindre les roadmaps dyalna w t-koun joz2 men DHAD Hackers. Ghadi n-contactiwk f aqrab waqt.",
+                "label_name": "set user_name=",
+                "placeholder_name": "dkhl_smitek_kamla",
+                "label_phone": "set user_phone=",
+                "placeholder_phone": "dkhl_nemra_dyalk",
+                "execute": "./execute",
+                "button": "[ JOIN_DABA ]"
         },
         "Road": {
                 "title_highlight": "مسارات",

@@ -2,10 +2,20 @@
         "whatsapp_message": "Hello DHAD Hackers! \n I am looking to enroll in one of your ready-made learning tracks. Could you please share more information regarding the available schedules and next steps?",
         "Hero": {
                 "label": "From computer basics to mastering programming and cybersecurity",
-                "title_part1": "Looking for training",
-                "title_highlight": " coding & IT?",
+                "title_part1": "Looking for training in",
+                "title_highlight": " programming & IT?",
                 "description": "We have the right training for you, whether you want to learn Excel and Word, build websites and software, or even master ethical hacking.",
                 "button_text": "Start learning now"
+        },
+        "Form": {
+                "path": "~/learning-path",
+                "system_ready": "Enter your name and phone number to join our roadmap and become part of DHADHackers. We will contact you shortly via the provided number.",
+                "label_name": "set user_name=",
+                "placeholder_name": "enter_your_full_name",
+                "label_phone": "set user_phone=",
+                "placeholder_phone": "enter_your_phone_number",
+                "execute": "./execute",
+                "button": "[ JOIN_NOW ]"
         },
         "Road": {
                 "title_highlight": "Tracks",
