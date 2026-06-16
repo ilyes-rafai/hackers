@@ -14,8 +14,8 @@ function Hero() {
         const t = useTranslations("Hero");
 
         return (
-                <section className="relative grid grid-cols-1 md:grid-cols-2 dhad-container sm:gap-12 items-center overflow-hidden min-h-[70vh]">
-                        <div className="flex flex-col justify-start items-start flex-1 min-w-75 z-10">
+                <section className="relative grid grid-cols-1 md:grid-cols-2 dhad-container gap-12 items-center overflow-hidden min-h-screen pt-24 sm:pt-0">
+                        <div className="flex flex-col justify-start items-start">
                                 <Title className="">
                                         {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
                                 </Title>
@@ -27,7 +27,7 @@ function Hero() {
                                 </div> */}
                         </div>
 
-                        <div className="flex justify-center mx-auto flex-1 min-w-75 relative z-10 mt-12 md:mt-0">
+                        <div className="">
                                 <Form />
                         </div>
                 </section>

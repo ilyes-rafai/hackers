@@ -16,45 +16,45 @@ export default function Home() {
                 <div>
                         <div className="bg-no-repeat bg-contain bg-center bg-[url('/img/hero-bg.png')] h-screen fixed inset-0 -z-50"></div>
 
-                        <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-30 w-full">
+                        <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-40 dark:opacity-30 w-full">
                                 <SoftAurora />
                         </div>
 
                         <Header />
 
-                        <div className="h-[5vh]"></div>
+                        <div className="dhad-container h-[5vh]"></div>
 
                         <Hero />
 
-                        <div className="h-[5vh]"></div>
+                        <div className="dhad-container h-[5vh]"></div>
 
                         <Fab />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Road />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Modality />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Testimonials />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Faq />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Cta />
 
-                        <div className="h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Footer />
 
-                        <div className="h-[5vh]"></div>
+                        <div className="dhad-container h-[5vh]"></div>
                 </div>
         );
 }

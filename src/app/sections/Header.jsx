@@ -5,7 +5,7 @@ import { ModeToggle } from "../components/ModeToggle";
 
 export default function Header() {
         return (
-                <div className="sticky top-8 z-9999 mt-8 p-4 backdrop-blur-md bg-white/5">
+                <div className="fixed w-full top-4 z-9999 p-4 backdrop-blur-md bg-white/5">
                         <div className="dhad-container flex justify-between items-center">
                                 <Logofull className="w-40 h-auto" />
 
