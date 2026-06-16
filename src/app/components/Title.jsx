@@ -9,7 +9,7 @@ export default function Title({ children, as: Tag = "h1", className = "" }) {
         return (
                 <Tag
                         className={`w-full text-balance font-extrabold tracking-tight text-black dark:text-white
-                ${isAr ? "leading-[1.4] md:leading-normal" : "leading-tight md:leading-tight"} 
+                ${isAr ? "leading-[1.4] md:leading-normal" : "orbitron leading-tight md:leading-tight"} 
                 ${Tag === "h1" ? "text-4xl sm:text-5xl lg:text-6xl mb-6" : ""}
                 ${Tag === "h2" ? "text-3xl sm:text-4xl lg:text-5xl mb-4" : ""}
                 ${className}

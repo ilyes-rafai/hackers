@@ -29,11 +29,9 @@ export default function CTA() {
                                                         <ShimmerButton text={t("button_text")} />
                                                 </div>
                                         </div>
-
-                                        {/* Right: OrbitingSkills */}
-                                        <div className="flex justify-center mx-auto relative z-10">
+                                        {/*<div className="flex justify-center mx-auto relative z-10">
                                                 <OrbitingSkills />
-                                        </div>
+                                        </div> */}
                                 </div>
                         </div>
                 </section>

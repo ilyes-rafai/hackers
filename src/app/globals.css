@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -198,4 +200,9 @@
         100% {
                 transform: rotate(360deg);
         }
+}
+
+
+.orbitron {
+        font-family: "Orbitron";
 }

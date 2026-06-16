@@ -28,6 +28,10 @@ export default function Home() {
 
                         <div className="dhad-container h-[5vh]"></div>
 
+                        <Form />
+
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
+
                         <Fab />
 
                         <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>

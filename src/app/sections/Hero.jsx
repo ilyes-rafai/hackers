@@ -14,21 +14,15 @@ function Hero() {
         const t = useTranslations("Hero");
 
         return (
-                <section className="relative grid grid-cols-1 md:grid-cols-2 dhad-container gap-12 items-center overflow-hidden min-h-screen pt-24 sm:pt-0">
-                        <div className="flex flex-col justify-start items-start">
-                                <Title className="">
-                                        {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
-                                </Title>
+                <section className="dhad-container text-center items-center overflow-hidden min-h-[70vh] flex flex-col justify-center">
+                        <Title className="max-w-4xl">
+                                {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
+                        </Title>
 
-                                <Text className="text-lg md:text-xl mb-10 leading-relaxed">{t("description")}</Text>
+                        <Text className="text-lg md:text-xl mb-10 leading-relaxed">{t("description")}</Text>
 
-                                {/* <div className="flex items-center w-full gap-4">
-                                        <ShimmerButton text={t("button_text")} />
-                                </div> */}
-                        </div>
-
-                        <div className="">
-                                <Form />
+                        <div className="flex items-center justify-center w-full gap-4">
+                                <ShimmerButton text={t("button_text")} />
                         </div>
                 </section>
         );
