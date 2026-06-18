@@ -13,9 +13,9 @@ export default function CTA() {
         const t = useTranslations("CTA");
 
         return (
-                <section className="relative w-[95%] md:w-[70%] lg:w-[60%] mx-auto hacker-card">
+                <section className="relative w-[95%] md:w-[70%] lg:w-[60%] mx-auto hacker-card text-[#FF0000]">
                         <Plus />
-                        <div className="relative border dark:border-[#FF0000]/50 text-[#FF0000]  min-h-1.5 md:min-h-95 flex items-center overflow-hidden">
+                        <div className="relative border dark:border-[#FF0000]/50  min-h-1.5 md:min-h-95 flex items-center overflow-hidden">
                                 <div className="relative z-10 w-full px-6 py-12 md:py-16 md:max-w-[60%] lg:max-w-[55%] text-center sm:text-left">
                                         <Title as="h2" className="text-3xl sm:text-4xl font-bold tracking-tight">
                                                 {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
