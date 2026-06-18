@@ -65,7 +65,7 @@ function Form() {
                                 </form>
                         </div>
 
-                        <div className="flex flex-col items-center text-center p-6 relative bg-linear-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 border border-neutral-200/80 dark:border-neutral-800 hacker-card text-neutral-300 dark:text-neutral-800">
+                        <div className="flex flex-col items-center text-center p-6 relative bg-linear-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 border border-neutral-200/80 dark:border-neutral-800 hacker-card text-neutral-300 dark:text-neutral-800 mx-auto">
                                 <Plus />
 
                                 <div className="absolute top-4 right-4 flex items-center gap-1.5">
@@ -86,7 +86,7 @@ function Form() {
                                         Global Members
                                 </p>
 
-                                <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-[200px]">
+                                <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-50">
                                         Part of the expanding DHAD Hackers ecosystem.
                                 </p>
                         </div>
