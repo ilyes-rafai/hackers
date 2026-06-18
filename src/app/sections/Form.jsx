@@ -2,12 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import React from "react";
-import AuroraText from "../components/Aurora";
-import { MagicIcon } from "../components/Icones";
-import OrbitingSkills from "../components/OrbitingSkills";
+import CyberButtonPrimary from "../components/CyberButtonPrimary";
 import Plus from "../components/Plus";
-import ShimmerButton from "../components/Shimmer";
-import Text from "../components/Text";
 import Title from "../components/Title";
 
 function Form() {
@@ -20,21 +16,21 @@ function Form() {
                                         {t("system_ready")}
                                 </Title>
 
-                                <form dir="ltr" className="relative border hacker-card p-8 group">
+                                <form dir="ltr" className="relative border hacker-card p-8">
                                         <Plus />
                                         {/* Form Title */}
 
                                         {/* Input Fields Container */}
                                         <div className="space-y-6 relative">
                                                 {/* Name Field */}
-                                                <div className="flex flex-col gap-2">
+                                                <div className="flex flex-col gap-2 group">
                                                         <label
                                                                 htmlFor="name"
                                                                 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 select-none transition-colors duration-300 group-focus-within:text-[#FF0000]"
                                                         >
                                                                 {t("label_name")}
                                                         </label>
-                                                        <div className="relative hacker-card my-4 text-neutral-300 dark:text-neutral-800">
+                                                        <div className="relative hacker-card my-4 text-neutral-300 dark:text-neutral-800 group-focus-within:text-[#FF0000] dark:group-focus-within:text-[#FF0000]">
                                                                 <Plus />
                                                                 <input
                                                                         type="text"
@@ -46,14 +42,14 @@ function Form() {
                                                 </div>
 
                                                 {/* Phone Field */}
-                                                <div className="flex flex-col gap-2">
+                                                <div className="flex flex-col gap-2 group">
                                                         <label
                                                                 htmlFor="phone"
                                                                 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 select-none transition-colors duration-300 group-focus-within:text-[#FF0000]"
                                                         >
                                                                 {t("label_phone")}
                                                         </label>
-                                                        <div className="relative hacker-card my-4 text-neutral-300 dark:text-neutral-800">
+                                                        <div className="relative hacker-card my-4 text-neutral-300 dark:text-neutral-800 group-focus-within:text-[#FF0000] dark:group-focus-within:text-[#FF0000]">
                                                                 <Plus />
                                                                 <input
                                                                         type="text"
@@ -63,13 +59,36 @@ function Form() {
                                                                 />
                                                         </div>
                                                 </div>
+
+                                                <CyberButtonPrimary label="Submit Application" type="submit" />
                                         </div>
                                 </form>
                         </div>
 
-                        <div className="flex justify-center relative z-10 flex-1">
-                                {/* <OrbitingSkills /> */}
-                                <div className="text-9xl">313</div>
+                        <div className="flex flex-col items-center text-center p-6 relative bg-linear-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 border border-neutral-200/80 dark:border-neutral-800 hacker-card text-neutral-300 dark:text-neutral-800">
+                                <Plus />
+
+                                <div className="absolute top-4 right-4 flex items-center gap-1.5">
+                                        <span className="w-2 h-2 rounded-full bg-[#FF0000] animate-pulse" />
+                                        <span className="text-[10px] font-medium tracking-wider text-neutral-400 uppercase">
+                                                Live Hub
+                                        </span>
+                                </div>
+
+                                <p className="text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mt-2">
+                                        <span className="text-neutral-400 dark:text-neutral-600 font-normal text-4xl mr-0.5">
+                                                +
+                                        </span>
+                                        273
+                                </p>
+
+                                <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200 mt-2">
+                                        Global Members
+                                </p>
+
+                                <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-[200px]">
+                                        Part of the expanding DHAD Hackers ecosystem.
+                                </p>
                         </div>
                 </section>
         );

@@ -1,15 +1,16 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { Alexandria, Poppins } from "next/font/google";
+import { Alexandria, Space_Grotesk } from "next/font/google"; // 1. Fixed import name
 import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from "./components/theme-provider";
 import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
-const poppins = Poppins({
+// 2. Variable set to lowercase snake_case or stripped string (Turbopack optimization)
+const spaceGrotesk = Space_Grotesk({
         subsets: ["latin"],
         weight: ["300", "400", "500", "600", "700"],
-        variable: "--font-poppins",
+        variable: "--font-space-grotesk",
 });
 
 const alexandria = Alexandria({
@@ -64,7 +65,7 @@ export default async function RootLayout({ children }) {
         const locale = await getLocale();
         const messages = await getMessages();
 
-        const fontClass = locale === "ar" ? alexandria.className : poppins.className;
+        const fontClass = locale === "ar" ? alexandria.className : spaceGrotesk.className;
 
         return (
                 <html

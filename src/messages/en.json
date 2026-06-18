@@ -18,9 +18,9 @@
                 "button": "[ JOIN_NOW ]"
         },
         "Road": {
-                "title_highlight": "Tracks",
-                "title_rest": " ready to learn",
-                "description": "Master programming, design, or cybersecurity. Follow a clear and practical path with step-by-step guidance.",
+                "title_highlight": "Ready-made",
+                "title_rest": " tracks for you",
+                "description": "Master programming, design, or cybersecurity with clear, practical, step-by-step guidance. Choose a ready-made path or design your own roadmap & we'll handle the rest for you.",
                 "button_text": "Start learning now"
         },
         "Fab": {
@@ -36,15 +36,17 @@
                 "description4": "We don't just teach theory; we share our expertise and years of practical field experience, so you can become a true professional."
         },
         "Modality": {
-                "title_highlight": "learning method",
-                "title_rest": "Choose your ",
-                "description": "We offer multiple learning methods and flexible hours designed to fit your routine. Choose the setting and time that help you focus, learn, and succeed.",
+                "title_rest": "Learn ",
+                "title_highlight": "anywhere, anytime",
+                "description": "Whether you thrive in a community, love a structured path, or study late at night, our flexible methods and hours are built around your routine. Pick the setting and time that help you focus, learn, and succeed",
+
                 "online_title": "Online Learning",
-                "online_desc": "Join interactive virtual classrooms live from anywhere.",
-                "home_title": "At your home",
-                "home_desc": "Get private, 1-on-1 direct training from your own space.",
-                "onsite_title": "At the EMIG center",
-                "onsite_desc": "Learn in a professional technical environment right in the city of Oujda.",
+                "online_desc": "Interactive, live virtual sessions from anywhere in the world.",
+                "home_title": "At Your Home",
+                "home_desc": "Dedicated 1-on-1 private mentorship from the comfort of your space.",
+                "onsite_title": "At Our Center",
+                "onsite_desc": "Hands-on learning in a professional technical hub based in Oujda.",
+
                 "location_hint": "(Located near Abdelmoumen High School)"
         },
         "Testimonials": {

@@ -3,10 +3,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
-import AuroraText from "../components/Aurora";
-import ShimmerButton from "../components/Shimmer";
+import CyberButtonPrimary from "../components/CyberButtonPrimary";
 import Text from "../components/Text";
-import Title from "../components/Title";
 
 export default function Fab() {
         const t = useTranslations("Fab");
@@ -67,7 +65,7 @@ export default function Fab() {
 
                         <div className="flex gap-8 flex-col items-center justify-center mt-16">
                                 <span className="text-balance sm:text-xl text-center">{t("cta_text")}</span>
-                                <ShimmerButton text={t("cta_button")} />
+                                <CyberButtonPrimary label={t("cta_button")} href="#formDhad" />
                         </div>
                 </section>
         );

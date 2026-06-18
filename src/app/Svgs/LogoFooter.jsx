@@ -2,7 +2,14 @@ import React from "react";
 
 export default function LogoFooter({ className, primaryColor = "#FF0000" }) {
         return (
-                <svg width="100%" height="auto" viewBox="0 0 16767 1039" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                        width="100%"
+                        height="auto"
+                        className={className}
+                        viewBox="0 0 16767 1039"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
                         <path
                                 d="M249.29 792.176H412.851V1038.43H0V369.383H249.29V792.176Z"
                                 className="fill-black dark:fill-white"

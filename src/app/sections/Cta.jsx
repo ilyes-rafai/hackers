@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import AuroraText from "../components/Aurora";
+import CyberButtonPrimary from "../components/CyberButtonPrimary";
 import OrbitingSkills from "../components/OrbitingSkills";
-import ShimmerButton from "../components/Shimmer";
 import Text from "../components/Text";
 import Title from "../components/Title";
 
@@ -26,12 +26,12 @@ export default function CTA() {
 
                                                 {/* Action Area */}
                                                 <div className="mt-8">
-                                                        <ShimmerButton text={t("button_text")} />
+                                                        <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
                                                 </div>
                                         </div>
-                                        {/*<div className="flex justify-center mx-auto relative z-10">
+                                        <div className="flex justify-center mx-auto relative z-10 text-[#FF0000]">
                                                 <OrbitingSkills />
-                                        </div> */}
+                                        </div>
                                 </div>
                         </div>
                 </section>

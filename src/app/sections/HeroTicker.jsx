@@ -33,7 +33,7 @@ export default function LogoTicker() {
         const translationDistance = "-130rem";
         const tripleIcons = [...icons, ...icons, ...icons, ...icons, ...icons, ...icons, ...icons, ...icons, ...icons];
         return (
-                <div className="w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_30%,black_70%,transparent)]">
+                <div className="w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_40%,black_60%,transparent)]">
                         <style>{`
         @keyframes ticker-kf {
           0% { transform: translateX(0); }
@@ -42,11 +42,10 @@ export default function LogoTicker() {
       `}</style>
 
                         <div className="flex -mx-4 animate-[ticker-kf_100s_linear_infinite]">
-                                {/* First original set of icons */}
                                 {tripleIcons.map((Icon, index) => (
                                         <div
                                                 key={`orig-${index}`}
-                                                className="w-fit flex-none mx-4 self-start max-w-full h-auto text-gray-600 grayscale-100 opacity-50"
+                                                className="w-10 sm:w-16 p-2 rounded-4xl aspect-square flex-none mx-4 self-start max-w-full h-auto hover:text-[#FF0000] text-black dark:text-white transition duration-500 flex place-content-center"
                                         >
                                                 <Icon />
                                         </div>
