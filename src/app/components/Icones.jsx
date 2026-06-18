@@ -57,7 +57,7 @@ export const BootstrapIcon = () => (
 
 export const HackersLogo = ({ className }) => (
         <svg
-                className={`w-full h-auto ${className}`}
+                className={`w-full h-auto ${className} fill-white`}
                 viewBox="0 0 114 71"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"

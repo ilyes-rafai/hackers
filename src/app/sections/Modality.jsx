@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import AuroraText from "../components/Aurora";
+import CyberButtonPrimary from "../components/CyberButtonPrimary";
 import Text from "../components/Text";
 import Title from "../components/Title";
 
@@ -18,6 +19,8 @@ export default function Modality() {
                                                 {t("title_rest")} <AuroraText>{t("title_highlight")}</AuroraText>
                                         </Title>
                                         <Text className="mb-8">{t("description")}</Text>
+
+                                        <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
                                 </div>
 
                                 <div className="flex justify-center flex-wrap items-start gap-16 text-center sm:text-left">

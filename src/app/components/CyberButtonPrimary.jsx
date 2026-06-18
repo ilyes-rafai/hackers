@@ -1,9 +1,31 @@
+"use client";
 import React from "react";
 
 export default function CyberButtonPrimary({ label, href, onClick, type = "button", className = "" }) {
         // Common design classes shared across all rendered elements
         const baseStyles =
                 "relative inline-block px-7 py-3 font-mono text-xs uppercase tracking-widest font-semibold text-neutral-900 dark:text-white group select-none cursor-pointer text-center";
+
+        // JavaScript Smooth Scrolling Handler
+        const handleSmoothScroll = (e) => {
+                // If an external onClick was passed alongside the href, trigger it first
+                if (onClick) onClick(e);
+
+                // Check if the link is a local section anchor (starts with #)
+                if (href && href.startsWith("#")) {
+                        e.preventDefault(); // Stop native browser jump
+
+                        const targetId = href.replace("#", "");
+                        const element = document.getElementById(targetId);
+
+                        if (element) {
+                                element.scrollIntoView({
+                                        behavior: "smooth",
+                                        block: "center", // Adjust to "center" or "end" if needed
+                                });
+                        }
+                }
+        };
 
         // Inner decorative structural markup
         const innerContent = (
@@ -33,7 +55,7 @@ export default function CyberButtonPrimary({ label, href, onClick, type = "butto
         // Semantic Element Routing
         if (href) {
                 return (
-                        <a href={href} className={`${baseStyles} ${className}`}>
+                        <a href={href} onClick={handleSmoothScroll} className={`${baseStyles} ${className}`}>
                                 {innerContent}
                         </a>
                 );

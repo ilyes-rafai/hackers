@@ -45,7 +45,7 @@ export default function LogoTicker() {
                                 {tripleIcons.map((Icon, index) => (
                                         <div
                                                 key={`orig-${index}`}
-                                                className="w-10 sm:w-16 p-2 rounded-4xl aspect-square flex-none mx-4 self-start max-w-full h-auto hover:text-[#FF0000] text-black dark:text-white transition duration-500 flex place-content-center"
+                                                className="w-14 sm:w-16 p-2 rounded-4xl aspect-square flex-none mx-2 sm:mx-4 self-start max-w-full h-auto hover:text-[#FF0000] text-black dark:text-white transition duration-500 flex place-content-center"
                                         >
                                                 <Icon />
                                         </div>
