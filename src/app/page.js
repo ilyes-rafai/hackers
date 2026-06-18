@@ -30,9 +30,10 @@ export default function Home() {
 
                         <Form />
 
-                        {/* <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
-                        <Fab /> */}
+                        <Fab />
+
 
                         <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
