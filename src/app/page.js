@@ -14,11 +14,11 @@ import Testimonials from "./sections/Testimonials";
 export default function Home() {
         return (
                 <div>
-                        <div className="bg-no-repeat bg-contain bg-center bg-[url('/img/hero-bg.png')] h-screen fixed inset-0 -z-50"></div>
+                        {/* <div className="bg-no-repeat bg-contain bg-center bg-[url('/img/hero-bg.png')] h-screen fixed inset-0 -z-50 opacity-80"></div> */}
 
-                        <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-40 dark:opacity-30 w-full">
+                        {/* <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-40 dark:opacity-30 w-full">
                                 <SoftAurora />
-                        </div>
+                        </div> */}
 
                         <Header />
 
@@ -26,13 +26,13 @@ export default function Home() {
 
                         <Hero />
 
-                        <div className="dhad-container h-[5vh]"></div>
+                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
                         <Form />
 
-                        <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
+                        {/* <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 
-                        <Fab />
+                        <Fab /> */}
 
                         <div className="dhad-container h-[10vh] sm:h-[20vh]"></div>
 

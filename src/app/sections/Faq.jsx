@@ -13,8 +13,7 @@ export default function Faq() {
                         <div className="text-center mb-16">
                                 <Title as="h2">{t("title")}</Title>
                         </div>
-
-                        <div className="bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl rounded-lg p-8">
+                        <div className="max-w-4xl mx-auto">
                                 <Accordion />
                         </div>
                 </section>

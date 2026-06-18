@@ -11,9 +11,9 @@ export default function Modality() {
         const t = useTranslations("Modality");
 
         return (
-                <section className="bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl py-16">
+                <section className="">
                         <div className="grid text-center items-center grid-cols-1 dhad-container gap-16">
-                                <div className="">
+                                <div className="w-full sm:w-4xl mx-auto">
                                         <Title as="h2">
                                                 {t("title_rest")} <AuroraText>{t("title_highlight")}</AuroraText>
                                         </Title>

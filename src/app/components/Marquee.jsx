@@ -61,7 +61,7 @@ const testimonialsList2 = [
 
 const TestimonialCard = ({ data }) => (
         <div
-                className="shrink-0 flex flex-col justify-between p-6 rounded-2xl select-none"
+                className="shrink-0 flex flex-col justify-between p-6 rounded-2xl select-none border"
                 style={{ width: "340px", marginRight: "24px" }}
         >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ function TestimonialMarquee({ items, baseSpeed = 0.5 }) {
 
 export default function Marquee() {
         return (
-                <div className="w-full flex items-center justify-center overflow-hidden bg-neutral-300/10 dark:bg-neutral-900/20 backdrop-blur-2xl">
+                <div className="w-full flex items-center justify-center overflow-hidden">
                         <div className="w-full flex flex-col gap-y-2 px-4">
                                 <TestimonialMarquee items={testimonialsList1} baseSpeed={0.6} />
                                 <TestimonialMarquee items={testimonialsList2} baseSpeed={-0.6} />

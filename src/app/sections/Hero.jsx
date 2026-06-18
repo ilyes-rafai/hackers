@@ -9,13 +9,18 @@ import ShimmerButton from "../components/Shimmer";
 import Text from "../components/Text";
 import Title from "../components/Title";
 import Form from "./Form";
+import HeroTicker from "./HeroTicker";
 
 function Hero() {
         const t = useTranslations("Hero");
 
         return (
-                <section className="dhad-container text-center items-center overflow-hidden min-h-[70vh] flex flex-col justify-center">
-                        <Title className="max-w-4xl">
+                <section className="dhad-container text-center items-center overflow-hidden min-h-[70vh] flex flex-col justify-center w-full sm:w-4xl">
+                        {/* <section className="dhad-container text-center items-center overflow-hidden min-h-[82vh] flex flex-col justify-center w-full sm:w-4xl bg-no-repeat bg-contain bg-center bg-[url('/img/hero-bg.png')]"> */}
+
+                        <HeroTicker />
+
+                        <Title className="mt-8">
                                 {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
                         </Title>
 
