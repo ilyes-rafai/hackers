@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
 import AuroraText from "../components/Aurora";
 import CyberButtonPrimary from "../components/CyberButtonPrimary";
@@ -15,6 +16,15 @@ export default function CTA() {
         return (
                 <section className="relative w-[95%] md:w-[70%] lg:w-[60%] mx-auto hacker-card text-[#FF0000]">
                         <Plus />
+
+                        <Image
+                                src="/img/learn/cta.png"
+                                alt="On-Site Learning"
+                                width={200}
+                                height={200}
+                                loading="lazy"
+                                className="absolute w-32 md:w-64 top-0 left-0 -translate-y-full"
+                        />
                         <div className="relative border dark:border-[#FF0000]/50  min-h-1.5 md:min-h-95 flex items-center overflow-hidden">
                                 <div className="relative z-10 w-full px-6 py-12 md:py-16 md:max-w-[60%] lg:max-w-[55%] text-center sm:text-left">
                                         <Title as="h2" className="text-3xl sm:text-4xl font-bold tracking-tight">

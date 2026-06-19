@@ -13,7 +13,6 @@ function Hero() {
         const t = useTranslations("Hero");
 
         return (
-                // <section className="dhad-container text-center items-center overflow-hidden min-h-[70vh] flex flex-col justify-center w-full sm:w-4xl">
                 <section className="dhad-container text-center items-center overflow-hidden min-h-[82vh] flex flex-col justify-center w-full sm:w-4xl bg-no-repeat bg-contain bg-center bg-[url('/img/hero-bg.png')]">
                         <div className="relative max-w-2xl mx-auto mb-8 pt-3 font-mono select-none">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 px-3 py-0.5 bg-white dark:bg-black border border-neutral-300 dark:border-[#FF0000]/50 shadow-md rounded-xs">
