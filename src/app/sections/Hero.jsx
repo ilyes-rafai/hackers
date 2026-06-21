@@ -72,7 +72,7 @@ function Hero() {
                         <Text className="text-lg md:text-xl mb-8 leading-relaxed">{t("description")}</Text>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 mb-16 select-none">
-                                <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
+                                <CyberButtonPrimary braces label={t("button_text")} href="#formDhad" />
                                 <CyberButtonSecondary label="Login now" href="#" />
                         </div>
 

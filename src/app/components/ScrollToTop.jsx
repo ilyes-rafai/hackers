@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import CyberButtonPrimary from "./CyberButtonPrimary";
 
 export default function ScrollToTop() {
         const [isVisible, setIsVisible] = useState(false);
 
         useEffect(() => {
-                // Button is displayed after scrolling for 300 pixels
                 const toggleVisibility = () => {
                         if (window.scrollY > 300) {
                                 setIsVisible(true);
@@ -29,27 +29,23 @@ export default function ScrollToTop() {
         return (
                 <>
                         {isVisible && (
-                                <button
+                                <CyberButtonPrimary
                                         onClick={scrollToTop}
-                                        className="cursor-pointer fixed bottom-22 right-8 z-50 p-2 bg-[#FF0000] text-white rounded-full shadow-lg hover:bg-[#F61500] transition-all duration-300 animate-in fade-in zoom-in"
+                                        className="z-50 animate-in fade-in zoom-in w-8 h-8 sm:w-12 sm:h-12  p-0! group"
                                         aria-label="Scroll to top"
                                 >
-                                        {/* You can replace this with an icon from lucide-react */}
                                         <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className="h-6 w-6"
-                                                fill="none"
+                                                className="w-6 sm:w-12 group-hover:animate-pulse"
                                                 viewBox="0 0 24 24"
-                                                stroke="currentColor"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
                                         >
                                                 <path
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        strokeWidth={2}
-                                                        d="M5 15l7-7 7 7"
+                                                        d="M15.5 14.5C15.4015 14.5005 15.3038 14.4813 15.2128 14.4435C15.1218 14.4057 15.0392 14.3501 14.97 14.28L11.97 11.28L8.96999 14.28C8.82472 14.3502 8.6607 14.3716 8.50227 14.3411C8.34385 14.3107 8.19947 14.23 8.09056 14.111C7.98165 13.9919 7.91402 13.841 7.89771 13.6805C7.88139 13.52 7.91726 13.3585 7.99999 13.22L11.5 9.72001C11.6406 9.57956 11.8312 9.50067 12.03 9.50067C12.2287 9.50067 12.4194 9.57956 12.56 9.72001L16.06 13.22C16.2004 13.3606 16.2793 13.5513 16.2793 13.75C16.2793 13.9488 16.2004 14.1394 16.06 14.28C15.9873 14.3539 15.8998 14.4116 15.8034 14.4495C15.7069 14.4874 15.6035 14.5046 15.5 14.5Z"
+                                                        className="fill-black dark:fill-white"
                                                 />
                                         </svg>
-                                </button>
+                                </CyberButtonPrimary>
                         )}
                 </>
         );

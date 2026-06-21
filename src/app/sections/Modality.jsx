@@ -20,7 +20,7 @@ export default function Modality() {
                                         </Title>
                                         <Text className="mb-8">{t("description")}</Text>
 
-                                        <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
+                                        <CyberButtonPrimary braces label={t("button_text")} href="#formDhad" />
                                 </div>
 
                                 <div className="flex justify-center flex-wrap items-start gap-16 text-center sm:text-left">

@@ -37,7 +37,7 @@ export default function CTA() {
                                         </div>
 
                                         <div className="mt-8">
-                                                <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
+                                                <CyberButtonPrimary braces label={t("button_text")} href="#formDhad" />
                                         </div>
                                 </div>
 

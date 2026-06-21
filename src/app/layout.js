@@ -83,8 +83,11 @@ export default async function RootLayout({ children }) {
                                 >
                                         <NextIntlClientProvider messages={messages}>
                                                 {children}
-                                                <ScrollToTop />
-                                                <Whatsapp />
+
+                                                <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-4">
+                                                        <ScrollToTop />
+                                                        <Whatsapp />
+                                                </div>
                                         </NextIntlClientProvider>
                                 </ThemeProvider>
                         </body>

@@ -61,7 +61,7 @@ function Form() {
                                                         </div>
                                                 </div>
 
-                                                <CyberButtonPrimary label="Submit Application" type="submit" />
+                                                <CyberButtonPrimary braces label="Submit Application" type="submit" />
                                         </div>
                                 </form>
                         </div>

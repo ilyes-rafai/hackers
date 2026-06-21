@@ -20,7 +20,7 @@ export default function Road() {
                                         <Text className="">{t("description")}</Text>
                                 </div>
 
-                                <CyberButtonPrimary label={t("button_text")} href="#formDhad" />
+                                <CyberButtonPrimary braces label={t("button_text")} href="#formDhad" />
                         </div>
 
                         <Roads />

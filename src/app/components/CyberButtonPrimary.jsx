@@ -1,7 +1,16 @@
 "use client";
 import React from "react";
 
-export default function CyberButtonPrimary({ label, href, onClick, type = "button", className = "" }) {
+export default function CyberButtonPrimary({
+        label,
+        href,
+        onClick,
+        type = "button",
+        className = "",
+        target,
+        children,
+        braces,
+}) {
         // Common design classes shared across all rendered elements
         const baseStyles =
                 "relative inline-block px-7 py-3 font-mono text-xs uppercase tracking-widest font-semibold text-neutral-900 dark:text-white group select-none cursor-pointer text-center";
@@ -43,11 +52,14 @@ export default function CyberButtonPrimary({ label, href, onClick, type = "butto
                         {/* Interactive Scanning Slide Overlay */}
                         <span className="absolute inset-y-0 left-0 w-0 bg-gradient-to-r from-[#FF0000]/10 dark:from-[#FF0000]/20 to-transparent transition-all duration-300 group-hover:w-full ease-out" />
 
-                        {/* Label Text Layer */}
+                        {/* Label Text & Children Layer */}
                         <span className="relative flex items-center justify-center gap-2">
-                                <span className="text-[#FF0000] font-bold">[</span>
-                                <span className="tracking-widest">{label}</span>
-                                <span className="text-[#FF0000] font-bold">]</span>
+                                {braces ? <span className="text-[#FF0000] font-bold">[</span> : ""}
+                                {/* Render children (like SVGs) if provided */}
+                                {children}
+                                {/* Render the text label only if it exists */}
+                                {label && <span className="tracking-widest">{label}</span>}
+                                {braces ? <span className="text-[#FF0000] font-bold">]</span> : ""}
                         </span>
                 </>
         );
@@ -55,7 +67,13 @@ export default function CyberButtonPrimary({ label, href, onClick, type = "butto
         // Semantic Element Routing
         if (href) {
                 return (
-                        <a href={href} onClick={handleSmoothScroll} className={`${baseStyles} ${className}`}>
+                        <a
+                                href={href}
+                                target={target ? "_blank" : undefined}
+                                rel={target === "_blank" ? "noopener noreferrer" : undefined}
+                                onClick={handleSmoothScroll}
+                                className={`${baseStyles} ${className}`}
+                        >
                                 {innerContent}
                         </a>
                 );

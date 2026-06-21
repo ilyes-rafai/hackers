@@ -1,5 +1,6 @@
 import AnimatedBlob from "./components/AnimatedBlob";
 import SoftAurora from "./components/SoftAurora";
+import SplashCursor from "./components/SplashCursor";
 import Cta from "./sections/Cta";
 import Fab from "./sections/Fab";
 import Faq from "./sections/Faq";
@@ -17,6 +18,19 @@ export default function Home() {
                         {/* <div className="fixed -z-10 rotate-180 bottom-0! h-[50vh] opacity-40 dark:opacity-30 w-full">
                                 <SoftAurora />
                         </div> */}
+
+                        <SplashCursor
+                                DENSITY_DISSIPATION={3.5}
+                                VELOCITY_DISSIPATION={2}
+                                PRESSURE={0.1}
+                                CURL={25}
+                                SPLAT_RADIUS={0.2}
+                                SPLAT_FORCE={6000}
+                                COLOR_UPDATE_SPEED={10}
+                                SHADING
+                                RAINBOW_MODE={false}
+                                COLOR="#ff0000"
+                        />
 
                         <Header />
 
