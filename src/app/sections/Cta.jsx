@@ -23,7 +23,8 @@ export default function CTA() {
                                 width={200}
                                 height={200}
                                 loading="lazy"
-                                className="absolute w-32 md:w-64 top-0 left-0 -translate-y-full"
+                                quality={100}
+                                className="absolute w-32 md:w-40 top-0 left-0 -translate-y-full"
                         />
                         <div className="relative border dark:border-[#FF0000]/50  min-h-1.5 md:min-h-95 flex items-center overflow-hidden">
                                 <div className="relative z-10 w-full px-6 py-12 md:py-16 md:max-w-[60%] lg:max-w-[55%] text-center sm:text-left">
