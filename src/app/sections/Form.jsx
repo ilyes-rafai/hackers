@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
 import CyberButtonPrimary from "../components/CyberButtonPrimary";
 import Plus from "../components/Plus";
@@ -11,6 +12,7 @@ function Form() {
 
         return (
                 <section id="formDhad" className="relative flex flex-wrap dhad-container gap-12 items-center">
+                        {/* form */}
                         <div className="flex-2">
                                 <Title as="h3" className="mb-8">
                                         {t("system_ready")}
@@ -18,7 +20,6 @@ function Form() {
 
                                 <form dir="ltr" className="relative border hacker-card p-8">
                                         <Plus />
-                                        {/* Form Title */}
 
                                         {/* Input Fields Container */}
                                         <div className="space-y-6 relative">
@@ -65,7 +66,18 @@ function Form() {
                                 </form>
                         </div>
 
+                        {/* right */}
                         <div className="flex flex-col items-center text-center p-6 relative bg-linear-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 border border-neutral-200/80 dark:border-neutral-800 hacker-card text-neutral-300 dark:text-neutral-800 mx-auto">
+                                {/* <Image
+                                        loading="lazy"
+                                        src="/img/appear.png"
+                                        alt="Dhad hackers hoopoe"
+                                        width={100}
+                                        height={100}
+                                        quality={100}
+                                        className="absolute top-2 left-[1/2] -translatex-1/2 -translate-y-full"
+                                /> */}
+
                                 <Plus />
 
                                 <div className="absolute top-4 right-4 flex items-center gap-1.5">

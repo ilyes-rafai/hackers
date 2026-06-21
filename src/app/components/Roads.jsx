@@ -39,21 +39,22 @@ function Roads() {
                 },
         ];
         return (
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {roads.map((road, i) => (
                                 <div
                                         key={i}
-                                        className="relative border p-4 flex flex-col justify-end hacker-card transition duration-300 group text-neutral-300 dark:text-neutral-800"
+                                        className="relative border p-4 flex flex-col justify-start hacker-card transition duration-300 group text-neutral-300 dark:text-neutral-800"
                                 >
                                         <Plus />
 
-                                        <div className="mb-4">
+                                        <div className="aspect-video relative">
                                                 <Image
+                                                        loading="lazy"
                                                         src={road.image}
                                                         alt={road.title}
-                                                        width={200}
-                                                        height={200}
-                                                        className="object-contai grayscale-100 w-[50%] transition duration-300 group-hover:grayscale-0"
+                                                        fill
+                                                        quality={100}
+                                                        className="block h-auto! w-full! grayscale-100 transition duration-300 group-hover:grayscale-0"
                                                 />
                                         </div>
 
