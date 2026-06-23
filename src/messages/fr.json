@@ -9,13 +9,17 @@
         },
         "Form": {
                 "path": "~/parcours-apprentissage",
-                "system_ready": "Saisissez vos nom et numéro de téléphone pour rejoindre nos parcours et intégrer DHADHackers. Nous vous contacterons dès que possible.",
-                "label_name": "set user_name=",
-                "placeholder_name": "saisissez_votre_nom_complet_ici",
-                "label_phone": "set user_phone=",
-                "placeholder_phone": "saisissez_votre_numero_ici",
+                "system_ready": "Laissez vos coordonnées ci-dessous. Nous vous appellerons sous peu pour commencer.",
+                "label_name": "Nom complet",
+                "placeholder_name": "Entrez votre nom complet ici",
+                "label_phone": "Numéro de téléphone",
+                "placeholder_phone": "Entrez votre numéro de téléphone ici",
                 "execute": "./executer",
-                "button": "[ REJOINDRE_MAINTENANT ]"
+                "button": "Soumettre une candidature",
+
+                "live_hub": "Hub en direct",
+                "global_members": "Membres mondiaux",
+                "ecosystem_desc": "Fait partie de l'écosystème en pleine expansion de DHAD Hackers."
         },
         "Road": {
                 "title_highlight": "Parcours",
@@ -36,15 +40,16 @@
                 "description4": "Nous ne faisons pas qu'enseigner la théorie ; nous partageons notre expertise et nos années de pratique sur le terrain pour que vous deveniez un pro rapidement."
         },
         "Modality": {
-                "title_highlight": "méthode d'apprentissage",
-                "title_rest": "Choisissez votre ",
-                "description": "Nous proposons plusieurs méthodes d'apprentissage et des horaires flexibles conçus pour s'adapter à votre routine. Choisissez le cadre et l'heure qui vous aident à vous concentrer et à réussir.",
+                "title_rest": "Apprenez ",
+                "title_highlight": "n'importe où, n'importe quand",
+                "description": "Que vous vous épanouissiez au sein d'une communauté, que vous préfériez un parcours structuré ou que vous étudiiez tard le soir, nos méthodes et horaires flexibles sont conçus autour de votre routine. Choisissez l'environnement et l'heure qui vous aident à vous concentrer, à apprendre et à réussir.",
                 "online_title": "Apprentissage en ligne",
-                "online_desc": "Rejoignez des classes virtuelles interactives en direct, d'où que vous soyez.",
-                "home_title": "À domicile",
-                "home_desc": "Profitez d'une formation privée et directe (1-to-1) depuis votre propre espace.",
-                "onsite_title": "Au centre EMIG",
-                "onsite_desc": "Apprenez dans un environnement technique professionnel en plein cœur de la ville d'Oujda.",
+                "online_desc": "Sessions virtuelles interactives en direct depuis n'importe où dans le monde.",
+                "home_title": "À votre domicile",
+                "home_desc": "Mentorat privé et dédié en tête-à-tête dans le confort de votre espace.",
+                "onsite_title": "Dans notre centre",
+                "onsite_desc": "Apprentissage pratique dans un pôle technique professionnel basé à Oujda.",
+                "button_text": "Commencez à apprendre",
                 "location_hint": "(Situé près du lycée Abdelmoumen)"
         },
         "Testimonials": {

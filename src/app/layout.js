@@ -6,7 +6,6 @@ import { ThemeProvider } from "./components/theme-provider";
 import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
-// 2. Variable set to lowercase snake_case or stripped string (Turbopack optimization)
 const spaceGrotesk = Space_Grotesk({
         subsets: ["latin"],
         weight: ["300", "400", "500", "600", "700"],

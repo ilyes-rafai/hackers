@@ -15,7 +15,11 @@
                 "label_phone": "Phone number",
                 "placeholder_phone": "Enter your phone number here",
                 "execute": "./execute",
-                "button": "[ JOIN_NOW ]"
+                "button": "Submit Application",
+
+                "live_hub": "Live Hub",
+                "global_members": "Global Members",
+                "ecosystem_desc": "Part of the expanding DHAD Hackers ecosystem."
         },
         "Road": {
                 "title_highlight": "Ready-made",

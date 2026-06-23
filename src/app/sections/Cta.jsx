@@ -24,10 +24,10 @@ export default function CTA() {
                                 height={200}
                                 loading="lazy"
                                 quality={100}
-                                className="absolute w-32 md:w-40 top-4 z-2 left-12 -translate-y-full"
+                                className="absolute w-32 md:w-40 top-4 z-2 left-1/2 -translate-x-1/2 -translate-y-full"
                         />
                         <div className="relative border dark:border-[#FF0000]/50  min-h-1.5 md:min-h-95 flex items-center overflow-hidden">
-                                <div className="relative z-10 w-full px-6 py-12 md:py-16 md:max-w-[60%] lg:max-w-[55%] text-center sm:text-left">
+                                <div className="rtl:text-right relative z-10 w-full px-6 py-12 md:py-16 md:max-w-[60%] lg:max-w-[55%] text-center sm:text-left">
                                         <Title as="h2" className="text-3xl sm:text-4xl font-bold tracking-tight">
                                                 {t("title_part1")} <AuroraText>{t("title_highlight")}</AuroraText>
                                         </Title>
@@ -41,7 +41,7 @@ export default function CTA() {
                                         </div>
                                 </div>
 
-                                <div className="absolute -bottom-37.5 right-1/2 translate-x-1/2 md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-[50%] lg:translate-x-[40%] pointer-events-none md:pointer-events-auto opacity-30 md:opacity-100 transition-all duration-300 scale-125 md:scale-120 lg:scale-150">
+                                <div className="absolute -bottom-37.5 right-1/2 translate-x-1/2 md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-[50%] lg:translate-x-[40%] rtl:right-auto rtl:left-1/2 rtl:-translate-x-1/2 md:rtl:left-0 md:rtl:right-auto md:rtl:translate-x-[-50%] lg:rtl:translate-x-[-40%] pointer-events-none md:pointer-events-auto opacity-30 md:opacity-100 transition-all duration-300 scale-125 md:scale-120 lg:scale-150">
                                         <OrbitingSkills />
                                 </div>
                         </div>

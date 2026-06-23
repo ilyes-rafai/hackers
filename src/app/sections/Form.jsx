@@ -18,7 +18,7 @@ function Form() {
                                         {t("system_ready")}
                                 </Title>
 
-                                <form dir="ltr" className="relative border hacker-card p-8">
+                                <form className="relative border hacker-card p-8">
                                         <Plus />
 
                                         {/* Input Fields Container */}
@@ -61,7 +61,8 @@ function Form() {
                                                         </div>
                                                 </div>
 
-                                                <CyberButtonPrimary braces label="Submit Application" type="submit" />
+                                                {/* <CyberButtonPrimary braces label="Submit Application" type="submit" /> */}
+                                                <CyberButtonPrimary braces label={t("button")} type="submit" />
                                         </div>
                                 </form>
                         </div>
@@ -83,7 +84,7 @@ function Form() {
                                 <div className="absolute top-4 right-4 flex items-center gap-1.5">
                                         <span className="w-2 h-2 rounded-full bg-[#FF0000] animate-pulse" />
                                         <span className="text-[10px] font-medium tracking-wider text-neutral-400 uppercase">
-                                                Live Hub
+                                                {t("live_hub")}
                                         </span>
                                 </div>
 
@@ -95,11 +96,11 @@ function Form() {
                                 </p>
 
                                 <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200 mt-2">
-                                        Global Members
+                                        {t("global_members")}
                                 </p>
 
                                 <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 max-w-50">
-                                        Part of the expanding DHAD Hackers ecosystem.
+                                        {t("ecosystem_desc")}
                                 </p>
                         </div>
                 </section>

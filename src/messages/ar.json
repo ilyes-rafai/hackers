@@ -9,13 +9,17 @@
         },
         "Form": {
                 "path": "~/roadmap-d-ta3alom",
-                "system_ready": "Dkhl smitek w nemra dyal telfoun bach t-rejoindre les roadmaps dyalna w t-koun joz2 men DHAD Hackers. Ghadi n-contactiwk f aqrab waqt.",
-                "label_name": "set user_name=",
-                "placeholder_name": "dkhl_smitek_kamla_hna",
-                "label_phone": "set user_phone=",
-                "placeholder_phone": "dkhl_nemra_dyalk_hna",
+                "system_ready": "خلي بيانات الاتصال الخاصة بك. غدي نتصلو بيك فأقرب وقت.",
+                "label_name": "الاسم الكامل",
+                "placeholder_name": "أدخل اسمك الكامل هنا",
+                "label_phone": "رقم الهاتف",
+                "placeholder_phone": "أدخل رقم هاتفك هنا",
                 "execute": "./execute",
-                "button": "[ JOIN_DABA ]"
+                "button": "تقديم الطلب",
+
+                "live_hub": "مركز مباشر",
+                "global_members": "أعضاء من حول العالم",
+                "ecosystem_desc": "جزء من نظام DHAD Hackers البيئي المتوسع."
         },
         "Road": {
                 "title_highlight": "مسارات",
@@ -35,16 +39,18 @@
                 "title_4": "بخبرة سنين، باش كنختصرو عليك الطريق",
                 "description4": "ما كنقريوش غير النظري، كنبارطاجيو معاك جميع خبرات وتجارب سنوات الممارسة فالميدان باش تولي محترف دغيا."
         },
+
         "Modality": {
-                "title_highlight": "طريقة تعلمك",
-                "title_rest": "اختر",
-                "description": "نقدم طرق تعلم متعددة وساعات مرنة مصممة لتناسب روتينك. اختر الإعداد والوقت الذي يساعدك على التركيز والتعلم والنجاح.",
+                "title_rest": "تعلم ",
+                "title_highlight": "في أي مكان وفي أي وقت",
+                "description": "سواء كنت تبغي التعلم ضمن مجموعة، أو تفضل مسارًا منظمًا، أو تدرس في وقت متأخر من الليل، فإن أساليبنا وساعاتنا المرنة مصممة لتناسب روتينك. اختر البيئة والوقت الذي يساعدك على التركيز والتعلم والنجاح.",
                 "online_title": "التعلم عبر الإنترنت",
-                "online_desc": "انضم إلى فصول دراسية افتراضية تفاعلية مباشرة من أي مكان.",
+                "online_desc": "جلسات افتراضية تفاعلية ومباشرة من أي مكان في العالم.",
                 "home_title": "في منزلك",
-                "home_desc": "احصل على تدريب خاص ومباشر (واحد لواحد) من مساحتك الخاصة.",
-                "onsite_title": "في مقر EMIG",
-                "onsite_desc": "تعلم داخل بيئة تقنية احترافية مباشرة في مدينة وجدة.",
+                "home_desc": "توجيه خاص ومخصص وجهًا لوجه وأنت في راحة مكانك.",
+                "onsite_title": "في مركزنا",
+                "onsite_desc": "تعلم تطبيقي في مركز تقني احترافي مقره في وجدة.",
+                "button_text": "ابدأ التعلم الآن",
                 "location_hint": "(يقع بالقرب من ثانوية عبد المؤمن)"
         },
         "Testimonials": {
@@ -98,7 +104,7 @@
         },
         "CTA": {
                 "title_part1": "لا تنتظر،",
-                "title_highlight": "فمستقبلك لن ينتظرك.",
+                "title_highlight": "فمستقبلك لن ينتظر.",
                 "description": "يتطور المشهد التقني كل يوم. احجز مكانك في دورتنا القادمة وابدأ في بناء المهارات التي ستحدد مسار مستقبلك المهني.",
                 "button_text": "ابدأ الآن"
         }
